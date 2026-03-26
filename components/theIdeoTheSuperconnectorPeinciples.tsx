@@ -1,11 +1,10 @@
 import React from 'react'
-import Image from 'next/image'
 
-const TheSuperconnectorMethodSection = () => {
+const TheIdeoTheSuperconnectorPeinciples = () => {
     return (
         <section className="w-full font-sans overflow-hidden">
             {/* Top Section */}
-            <div className="w-full bg-[#f3efe6] relative">
+            <div className="w-full bg-[#f3efe6] relative pt-[100px]">
                 <div className="w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between min-h-[500px] md:h-[600px] relative z-10 px-8 md:px-16 lg:px-[100px]">
                     <div className="w-full md:w-1/2 py-20 md:py-0 relative z-20">
                         <h2 className="text-[#3b3631] text-[32px] md:text-[42px] lg:text-[48px] xl:text-[52px] font-normal leading-[1.1] mb-6 md:whitespace-nowrap" style={{ fontFamily: "'Cormorant', serif" }}>
@@ -20,7 +19,7 @@ const TheSuperconnectorMethodSection = () => {
                         <img
                             src="/white-shirt-woman.png"
                             alt="The Superconnector Method"
-                            className="absolute bottom-0 right-[-75px] lg:right-[-45px] h-[170%] w-auto object-contain object-bottom transform scale-[1.35] origin-bottom"
+                            className="absolute bottom-0 right-[-75px] lg:right-[-45px] h-[180%] w-auto object-contain object-bottom transform scale-[1.45] origin-bottom"
                         />
                     </div>
                     {/* Image Mobile */}
@@ -28,7 +27,7 @@ const TheSuperconnectorMethodSection = () => {
                         <img
                             src="/white-shirt-woman.png"
                             alt="The Superconnector Method"
-                            className="absolute bottom-0 h-[140%] w-auto object-contain object-bottom transform scale-[1.10] origin-bottom"
+                            className="absolute bottom-0 h-[150%] w-auto object-contain object-bottom transform scale-[1.25] origin-bottom"
                         />
                     </div>
                 </div>
@@ -108,4 +107,4 @@ const TheSuperconnectorMethodSection = () => {
     )
 }
 
-export default TheSuperconnectorMethodSection
+export default TheIdeoTheSuperconnectorPeinciples

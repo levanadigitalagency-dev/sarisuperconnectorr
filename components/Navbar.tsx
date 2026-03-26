@@ -44,6 +44,7 @@ export default function Navbar() {
           <Link href="/#leadership" className={`transition-colors ${hoverColorClass}`}>Leadership roles</Link>
           <Link href="/#advisory" className={`transition-colors ${hoverColorClass}`}>Speaking & advisory</Link>
           <Link href="/blog" className={`transition-colors ${hoverColorClass}`}>Blog</Link>
+          <Link href="/theIdeoTheSuperconnectorPeinciples" className={`transition-colors ${hoverColorClass}`}>Method</Link>
           <Link href="/#connect" className={`transition-colors ${hoverColorClass}`}>Connect</Link>
         </div>
       </div>
@@ -58,6 +59,7 @@ export default function Navbar() {
         <Link href="/#leadership" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Leadership roles</Link>
         <Link href="/#advisory" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Speaking & advisory</Link>
         <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Blog</Link>
+        <Link href="/theIdeoTheSuperconnectorPeinciples" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Method</Link>
         <Link href="/#connect" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Connect</Link>
       </div>
     </nav>
