@@ -67,14 +67,14 @@ const AboutSection: React.FC<AboutSectionProps> = ({
 
       {/* 3. BOTTOM SECTION (What I do) */}
       <div className="w-full bg-[#f3efe6]">
-        <div className="w-full max-w-[1700px] mx-auto py-20 px-6 md:px-12 lg:px-[60px] text-[#333333]">
-            <h2 className="text-[#a57a53] text-[28px] md:text-[32px] lg:text-[36px] mb-8 font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>What I do</h2>
+        <div className="w-full max-w-[1700px] mx-auto pt-16 pb-20 px-6 md:px-12 lg:px-[60px] text-[#333333]">
+            <h2 className="text-[#a57a53] text-[28px] md:text-[32px] lg:text-[36px] mb-2 font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>What I do</h2>
             
             <div className="flex flex-col md:flex-row justify-between items-start mb-10 gap-8">
                 <p className="text-[16px] md:text-[18px] w-full md:w-1/2 font-medium leading-relaxed max-w-[500px]">
                     I operate at the intersection of corporate leadership, international diplomacy, and strategic communication.
                 </p>
-                <p className="text-[14px] md:text-[16px] md:text-right w-full md:w-1/2 text-[#333] font-semibold pt-2">
+                <p className="text-[14px] md:text-[16px] md:text-right w-full md:w-1/2 text-[#333] font-semibold pt-8">
                     My work Focuses on three Areas :
                 </p>
             </div>

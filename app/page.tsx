@@ -5,6 +5,7 @@ import LeadershipRoles from "@/components/LeadershipRoles";
 import AdvisorySection from "@/components/advisorySection";
 import PhilosopySection from "@/components/PhilosopySection";
 import Footer from "@/components/Footer";
+import TheSuperconnectorMethodSection from "@/components/TheSuperconnectorMethodSection";
 import { aboutContent } from "@/data/aboutContent";
 import { leadershipContent } from "@/data/leadershipContent";
 import { AdvisoryContent } from "@/data/AdvisoryContent";
@@ -24,6 +25,8 @@ export default function Home() {
         imageHeight={aboutContent.imageHeight}
         paragraphs={aboutContent.paragraphs}
       />
+      <div className='hidden md:block h-16 bg-[#e8decd]'></div>
+      <TheSuperconnectorMethodSection />
       <div className='hidden md:block h-16'></div>
       <LeadershipRoles
         title={leadershipContent.title}
