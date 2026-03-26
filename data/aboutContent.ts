@@ -1,6 +1,6 @@
 export const aboutContent = {
   title: "Who I Am",
-  imageSrc: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  imageSrc: "/white-shirt-woman.png",
   imageAlt: "About Me",
   imageWidth: 512,
   imageHeight: 558,

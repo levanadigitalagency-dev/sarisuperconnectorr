@@ -4,10 +4,8 @@ import AboutSection from "@/components/AboutSection";
 import LeadershipRoles from "@/components/LeadershipRoles";
 import AdvisorySection from "@/components/advisorySection";
 import PhilosopySection from "@/components/PhilosopySection";
-import ServiceSection from "@/components/ServiceSection";
 import Footer from "@/components/Footer";
 import { aboutContent } from "@/data/aboutContent";
-import { serviceContent } from "@/data/serviceContent";
 import { leadershipContent } from "@/data/leadershipContent";
 import { AdvisoryContent } from "@/data/AdvisoryContent";
 import { philosophyContent } from "@/data/philosophyContent";
@@ -27,14 +25,6 @@ export default function Home() {
         paragraphs={aboutContent.paragraphs}
       />
       <div className='hidden md:block h-16'></div>
-      <ServiceSection
-        title={serviceContent.title}
-        imageSrc={serviceContent.imageSrc}
-        imageAlt={serviceContent.imageAlt}
-        imageWidth={serviceContent.imageWidth}
-        imageHeight={serviceContent.imageHeight}
-        sections={serviceContent.sections}
-      />
       <LeadershipRoles
         title={leadershipContent.title}
         description={leadershipContent.description}
