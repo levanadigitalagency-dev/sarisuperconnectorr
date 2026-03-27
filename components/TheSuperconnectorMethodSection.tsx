@@ -79,7 +79,7 @@ const defaultBottomRow: Principle[] = [
 ];
 
 const cardClass =
-  "bg-[#f4f4f4] rounded-[10px] px-4 py-4 md:px-5 md:py-4 lg:px-6 lg:py-5";
+  "w-full bg-white border border-[#e4d9ca] rounded-[10px] px-4 py-5 md:px-5 md:py-5 lg:px-6 lg:py-6 shadow-sm";
 
 const TheSuperconnectorMethodSection = ({
   title = "The Superconnector Method",
@@ -98,27 +98,27 @@ const TheSuperconnectorMethodSection = ({
   return (
     <section className="w-full overflow-hidden">
       <div className="w-full bg-[#f3eee7]">
-        <div className="w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 lg:px-[72px] min-h-[430px] md:min-h-[600px]">
-          <div className="w-full md:w-[60%] pt-14 pb-10 md:pt-0 md:pb-0 z-10">
+        <div className="w-full max-w-[1440px] mx-auto flex flex-col-reverse md:flex-row items-center px-6 md:px-12 lg:px-[72px] pt-10 md:pt-14 pb-8 md:pb-0">
+          <div className="w-full md:w-[60%] mt-6 md:mt-0">
             <h2
-              className="text-[#2f2d2d] text-[36px] md:text-[52px] lg:text-[68px] leading-[1] mb-6 md:whitespace-nowrap"
+              className="text-[#2f2d2d] text-[32px] sm:text-[36px] md:text-[52px] lg:text-[68px] leading-[1.05] mb-4 md:mb-6"
               style={{ fontFamily: "'Cormorant', serif", fontWeight: 400 }}
             >
               {title}
             </h2>
             <p
-              className="text-[#3b3b3b] text-[15px] md:text-[17px] lg:text-[20px] leading-[1.5] max-w-[580px]"
+              className="text-[#3b3b3b] text-[15px] sm:text-[16px] md:text-[17px] lg:text-[20px] leading-[1.6] max-w-[680px]"
               style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
             >
               {description}
             </p>
           </div>
 
-          <div className="w-full md:w-[40%] relative h-[420px] md:h-[600px] flex justify-end items-end">
+          <div className="w-full md:w-[40%] mb-3 md:mb-0 relative h-[300px] sm:h-[360px] md:h-[600px] flex justify-center items-end">
             <img
               src={imageSrc}
               alt={title}
-              className="h-full w-auto max-w-none object-contain object-bottom md:translate-x-32 lg:translate-x-40 scale-110 origin-bottom"
+              className="max-h-full w-auto max-w-full object-contain transition-transform duration-700 ease-in-out hover:scale-105"
             />
           </div>
         </div>
