@@ -75,7 +75,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 text-[#333333]">
                 {/* Card 1 */}
                 <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-                    <h3 className="text-[#a57a53] text-[15px] lg:text-[16px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+                    <h3 className="text-[#a57a53] text-[20px] lg:text-[20px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
                         Corporate Reputation & Strategic<br />Communications
                     </h3>
                     <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>
@@ -85,7 +85,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
                 
                 {/* Card 2 */}
                 <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-                    <h3 className="text-[#a57a53] text-[15px] lg:text-[16px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+                    <h3 className="text-[#a57a53] text-[20px] lg:text-[20px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
                         Cross-Border Strategic Facilitation
                     </h3>
                     <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>
@@ -95,7 +95,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
                 
                 {/* Card 3 */}
                 <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-                    <h3 className="text-[#a57a53] text-[15px] lg:text-[16px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+                    <h3 className="text-[#a57a53] text-[20px] lg:text-[20px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
                         Hospitality Leadership
                     </h3>
                     <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>
