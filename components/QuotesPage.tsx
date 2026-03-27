@@ -3,7 +3,7 @@ import quoteCards from '../content/Quote'
 
 const QuotesPage = () => {
   return (
-    <div className="min-h-screen bg-[#FFFFFF]">
+    <div className="min-h-screen bg-[#FFFFFF] mb-10 ">
       <section className="mx-auto min-h-[150px] min-w-screen bg-[#EDE3D2] max-w-4xl text-center mb-12 justify-center items-center flex px-4">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-[#AA7D55] font-[500]" style={{ fontFamily: 'Cormorant, serif' }}>
           The Quotes

@@ -74,7 +74,7 @@ const Navbar = () => {
           {/* Mega Menu Dropdown */}
           <div className="absolute top-full left-[50%] -translate-x-[30%] mt-2 w-[1000px] bg-[#F8F9FA] rounded-[16px] shadow-lg p-6 grid grid-cols-2 gap-x-6 gap-y-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
             {aboutMenuItems.map((item, idx) => (
-              <a
+              <Link
                 key={idx}
                 href={item.href}
                 className="group/item p-4 rounded-[12px] hover:bg-[#EAEFF5] transition-colors flex flex-col items-start text-left"
@@ -85,7 +85,7 @@ const Navbar = () => {
                 <p className="font-[family-name:var(--font-poppins)] text-[13px] text-[#666666] leading-relaxed transition-colors">
                   {item.desc}
                 </p>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -93,13 +93,13 @@ const Navbar = () => {
         {mainMenuItems.map((item) => {
           const isConnect = item.label === 'Connect';
           return (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className={`text-base text-[#333333] hover:opacity-80 transition-opacity ${isConnect ? "font-[family-name:var(--font-poppins)] font-medium text-[#AA7D55]" : ""}`}
             >
               {item.label}
-            </a>
+            </Link>
           );
         })}
       </div>
@@ -142,10 +142,10 @@ const Navbar = () => {
             </button>
             <div className={`flex flex-col pl-4 mt-2 gap-4 transition-all duration-300 overflow-hidden ${isMobileAboutOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}>
               {aboutMenuItems.map((item, idx) => (
-                <a key={idx} href={item.href} className="flex flex-col gap-1 py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link key={idx} href={item.href} className="flex flex-col gap-1 py-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="text-base text-[#AA7D55] font-semibold">{item.title}</span>
                   <span className="text-[13px] text-[#666666] font-[family-name:var(--font-poppins)] leading-relaxed">{item.desc}</span>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -155,14 +155,14 @@ const Navbar = () => {
             {mainMenuItems.map((item) => {
               const isConnect = item.label === 'Connect';
               return (
-                <a
+                <Link
                   key={item.label}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`text-lg transition-opacity ${isConnect ? "font-[family-name:var(--font-poppins)] font-medium text-[#AA7D55]" : "text-[#333333]"}`}
                 >
                   {item.label}
-                </a>
+                </Link>
               );
             })}
           </div>
