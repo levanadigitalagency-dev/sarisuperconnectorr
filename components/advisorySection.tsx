@@ -31,11 +31,11 @@ const AdvisorySection: React.FC<AdvisorySectionProps> = ({
   return (
     <div className="flex flex-col-reverse md:flex-row" id="advisory">
       <div
-        className={`w-full ${imageSrc ? 'md:w-[55%]' : ''} px-[16px] py-16 md:pl-[80px] md:pr-[60px] text-[#1d1d1d] flex flex-col justify-center`}
+        className={`w-full ${imageSrc ? 'md:w-[55%]' : ''} px-[20px] py-12 md:pl-[80px] md:pr-[60px] text-[#1d1d1d] flex flex-col justify-center`}
         id="advisory-text"
       >
-        <h1 className="text-4xl font-bold mb-4">{title}</h1>
-        {subtitle && <p className="text-lg font-semibold mb-6">{subtitle}</p>}
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">{title}</h1>
+        {subtitle && <p className="text-base md:text-lg font-semibold mb-6">{subtitle}</p>}
 
         {bulletPoints.length > 0 && (
           <ul className="list-disc list-inside space-y-2 mb-6">
@@ -55,7 +55,7 @@ const AdvisorySection: React.FC<AdvisorySectionProps> = ({
 
         {signature && (
           <div className="mt-4 flex justify-center">
-            <p className="text-4xl font-signature text-center">{signature}</p>
+            <p className="text-4xl md:text-5xl font-signature text-center">{signature}</p>
           </div>
         )}
 

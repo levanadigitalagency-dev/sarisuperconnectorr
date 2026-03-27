@@ -55,7 +55,7 @@ export default function Navbar() {
       >
         <Link href="/#home" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Home</Link>
         <Link href="/#about" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>About</Link>
-        <Link href="/theIdeoTheSuperconnectorPeinciples" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>The Idea</Link>
+        <Link href="/theIdeaSuperconnectorPrinciples" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>The Idea</Link>
         <Link href="/#services" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Service</Link>
         <Link href="/#leadership" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Leadership roles</Link>
         <Link href="/#advisory" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Speaking & advisory</Link>

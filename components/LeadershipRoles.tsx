@@ -40,10 +40,10 @@ const LeadershipRoles: React.FC<LeadershipRolesProps> = ({
         </div>
       )}
       <div
-        className={`w-full ${imageSrc ? 'md:w-1/2' : ''} px-[16px] py-16 md:pr-[80px] md:pl-[60px] text-[#1d1d1d] flex flex-col justify-center`}
+        className={`w-full ${imageSrc ? 'md:w-1/2' : ''} px-[20px] py-12 md:pr-[80px] md:pl-[60px] text-[#1d1d1d] flex flex-col justify-center`}
         id="leadership-text"
       >
-        <h1 className="text-4xl font-bold mb-4">{title}</h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">{title}</h1>
         {description && <p className="mb-6">{description}</p>}
         <ul className="list-disc list-inside space-y-2">
           {roles.map((role, idx) => (

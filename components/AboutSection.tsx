@@ -34,11 +34,11 @@ const AboutSection: React.FC<AboutSectionProps> = ({
                 />
             )}
         </div>
-        <div className="w-full md:w-[55%] flex flex-col justify-center px-8 md:px-0 lg:pr-24 pt-16 md:pt-0">
-            <p className="text-[#3b3631] text-[28px] md:text-[36px] leading-[1.3] md:leading-[46px] w-full max-w-[800px] font-light" style={{ fontFamily: "'Cormorant', serif" }}>
-              Access, titles, and visibility don&apos;t define real<br className="hidden md:block" />
-              influence or power. True leadership is built<br className="hidden md:block" />
-              on trust, positioning, and meaningful<br className="hidden md:block" />
+        <div className="w-full md:w-[55%] flex flex-col justify-center px-6 md:px-0 lg:pr-24 pt-16 md:pt-0">
+            <p className="text-[#3b3631] text-[24px] md:text-[36px] leading-[1.3] md:leading-[46px] w-full max-w-[600px] font-light" style={{ fontFamily: "'Cormorant', serif" }}>
+              Access, titles, and visibility don&apos;t define real
+              influence or power. True leadership is built
+              on trust, positioning, and meaningful
               relationships that create lasting impact.
             </p>
         </div>

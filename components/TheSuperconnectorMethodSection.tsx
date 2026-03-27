@@ -1,12 +1,24 @@
 import React from "react";
 
-type Principle = {
+interface Principle {
   icon: React.ReactNode;
   title: string;
   description: string;
-};
+}
 
-const topRow: Principle[] = [
+interface TheSuperconnectorMethodSectionProps {
+  title?: string;
+  description?: string;
+  imageSrc?: string;
+  principlesTitle?: string;
+  topRowPrinciples?: Principle[];
+  bottomRowPrinciples?: Principle[];
+  buttonText?: string;
+  onButtonClick?: () => void;
+  footerQuoteLines?: string[];
+}
+
+const defaultTopRow: Principle[] = [
   {
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -30,7 +42,7 @@ const topRow: Principle[] = [
   },
 ];
 
-const bottomRow: Principle[] = [
+const defaultBottomRow: Principle[] = [
   {
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -69,31 +81,44 @@ const bottomRow: Principle[] = [
 const cardClass =
   "bg-[#f4f4f4] rounded-[10px] px-4 py-4 md:px-5 md:py-4 lg:px-6 lg:py-5";
 
-const TheSuperconnectorMethodSection = () => {
+const TheSuperconnectorMethodSection = ({
+  title = "The Superconnector Method",
+  description = "Sari Kusumaningrum speaks and advises on the intersection of leadership, reputation, and global connectivity.",
+  imageSrc = "/white-shirt-woman.png",
+  principlesTitle = "The Core Principles",
+  topRowPrinciples = defaultTopRow,
+  bottomRowPrinciples = defaultBottomRow,
+  buttonText = "Learn more",
+  onButtonClick,
+  footerQuoteLines = [
+    "Because the most influential leaders are not those who know the most people.",
+    "They are those who know how to connect people with purpose."
+  ],
+}: TheSuperconnectorMethodSectionProps) => {
   return (
     <section className="w-full overflow-hidden">
       <div className="w-full bg-[#f3eee7]">
         <div className="w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 lg:px-[72px] min-h-[430px] md:min-h-[600px]">
           <div className="w-full md:w-[60%] pt-14 pb-10 md:pt-0 md:pb-0 z-10">
             <h2
-              className="text-[#2f2d2d] text-[36px] md:text-[52px] lg:text-[68px] leading-[1] mb-6 whitespace-nowrap"
+              className="text-[#2f2d2d] text-[36px] md:text-[52px] lg:text-[68px] leading-[1] mb-6 md:whitespace-nowrap"
               style={{ fontFamily: "'Cormorant', serif", fontWeight: 400 }}
             >
-              The Superconnector Method
+              {title}
             </h2>
             <p
               className="text-[#3b3b3b] text-[15px] md:text-[17px] lg:text-[20px] leading-[1.5] max-w-[580px]"
               style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
             >
-              Sari Kusumaningrum speaks and advises on the intersection of leadership, reputation, and global connectivity.
+              {description}
             </p>
           </div>
 
           <div className="w-full md:w-[40%] relative h-[420px] md:h-[600px] flex justify-end items-end">
             <img
-              src="/white-shirt-woman.png"
-              alt="The Superconnector Method"
-              className="h-full w-auto max-w-none object-contain object-bottom md:translate-x-24 lg:translate-x-32 scale-110 origin-bottom"
+              src={imageSrc}
+              alt={title}
+              className="h-full w-auto max-w-none object-contain object-bottom md:translate-x-32 lg:translate-x-40 scale-110 origin-bottom"
             />
           </div>
         </div>
@@ -105,11 +130,11 @@ const TheSuperconnectorMethodSection = () => {
             className="text-[#2f2d2d] text-[40px] md:text-[52px] lg:text-[56px] leading-[1.1] mb-6 md:mb-7"
             style={{ fontFamily: "'Cormorant', serif" }}
           >
-            The Core Principles
+            {principlesTitle}
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-            {topRow.map((item) => (
+            {topRowPrinciples.map((item) => (
               <div key={item.title} className={cardClass}>
                 <div className="text-[#2f2d2d] mb-2">{item.icon}</div>
                 <h4 className="text-[#2f2d2d] text-[16px] md:text-[18px] leading-none mb-2" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700 }}>
@@ -123,7 +148,7 @@ const TheSuperconnectorMethodSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 mt-3 md:mt-4">
-            {bottomRow.map((item) => (
+            {bottomRowPrinciples.map((item) => (
               <div key={item.title} className={cardClass}>
                 <div className="text-[#2f2d2d] mb-2">{item.icon}</div>
                 <h4 className="text-[#2f2d2d] text-[16px] md:text-[18px] leading-none mb-2" style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700 }}>
@@ -138,18 +163,22 @@ const TheSuperconnectorMethodSection = () => {
 
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-5 mt-5">
             <button
+              onClick={onButtonClick}
               className="bg-[#b07b4d] text-white px-5 py-2 rounded-[6px] text-[17px] md:text-[20px]"
               style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 600 }}
             >
-              Learn more
+              {buttonText}
             </button>
             <p
               className="text-[#2f2d2d] text-[14px] md:text-[16px] leading-[1.45] md:text-right max-w-[720px]"
               style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 500 }}
             >
-              Because the most influential leaders are not those who know the most people.
-              <br />
-              They are those who know how to connect people with purpose.
+              {footerQuoteLines.map((line, i) => (
+                <React.Fragment key={i}>
+                  {line}
+                  {i < footerQuoteLines.length - 1 && <br />}
+                </React.Fragment>
+              ))}
             </p>
           </div>
         </div>

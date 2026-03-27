@@ -34,10 +34,10 @@ const PhilosopySection: React.FC<PhilosopySectionProps> = ({
         </div>
       )}
 
-      <div className="relative z-10 mx-auto flex min-h-[300px] max-w-4xl flex-col items-center justify-center px-[16px] py-20 md:px-[80px] text-center text-[#1d1d1d]">
-        <h1 className="text-5xl font-bold tracking-tight sm:text-4xl text-[#1d1d1d]">{title}</h1>
-        {subtitle && <p className="mt-2 text-base font-semibold text-[#1d1d1d]">{subtitle}</p>}
-        {headline && <h2 className="mt-5 text-[40px] font-bold sm:text-[44px] text-white drop-shadow-md">{headline}</h2>}
+      <div className="relative z-10 mx-auto flex min-h-[300px] max-w-4xl flex-col items-center justify-center px-[20px] py-16 md:px-[80px] text-center text-[#1d1d1d]">
+        <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-[#1d1d1d]">{title}</h1>
+        {subtitle && <p className="mt-2 text-sm md:text-base font-semibold text-[#1d1d1d]">{subtitle}</p>}
+        {headline && <h2 className="mt-5 text-[28px] md:text-[44px] font-bold text-white drop-shadow-md">{headline}</h2>}
         {body.length > 0 && (
           <div className="mt-4 space-y-2 sm:text-base font-normal text-[#1d1d1d]">
             {body.map((line, idx) => (

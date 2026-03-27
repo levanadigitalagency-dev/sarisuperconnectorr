@@ -22,10 +22,10 @@ export default function Hero() {
       </div>
 
       {/* Right Column: Content */}
-      <div className="flex space-y-10 w-full md:w-[60%] flex-col items-center justify-center px-[16px] py-16 md:px-[60px] lg:px-[80px] text-center order-2 md:order-2 z-10 bg-[#1d1d1d] md:bg-transparent">
+      <div className="flex space-y-8 md:space-y-10 w-full md:w-[60%] flex-col items-center justify-center px-[20px] py-12 md:px-[60px] lg:px-[80px] text-center order-2 md:order-2 z-10 bg-[#1a1a1a] md:bg-transparent">
 
         <div>
-          <h1 className="text-[32px] md:text-[48px] lg:text-[60px] font-bold text-white leading-[1.1] mb-3.75 tracking-tight">
+          <h1 className="text-[36px] md:text-[48px] lg:text-[60px] font-bold text-white leading-[1.1] mb-4 tracking-tight">
             Global Strategic Connector
           </h1>
 
@@ -34,29 +34,29 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="text-[40px] md:text-[52px] text-white font-signature">
+        <div className="text-[32px] md:text-[52px] text-white font-signature">
           Sari Kusumaningrum
         </div>
 
         {/* Call to Action Buttons */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10.5 w-full max-w-[800px]">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 w-full max-w-[800px]">
           <button
             onClick={() => document.getElementById('advisory')?.scrollIntoView({ behavior: 'smooth' })}
-            className="w-full md:w-auto px-[20px] py-[12px] bg-white text-[#1d1d1d] font-inter font-semibold text-lg hover:bg-zinc-200 transition-colors whitespace-nowrap"
+            className="w-full md:w-auto px-[24px] py-[14px] bg-white text-[#1a1a1a] font-inter font-semibold text-base md:text-lg hover:bg-zinc-200 transition-colors whitespace-nowrap"
           >
             Strategic Advisory
           </button>
 
           <button
             onClick={() => document.getElementById('advisory')?.scrollIntoView({ behavior: 'smooth' })}
-            className="w-full md:w-auto px-[20px] py-[12px] bg-white text-[#1d1d1d] font-inter font-semibold text-lg hover:bg-zinc-200 transition-colors whitespace-nowrap"
+            className="w-full md:w-auto px-[24px] py-[14px] bg-white text-[#1a1a1a] font-inter font-semibold text-base md:text-lg hover:bg-zinc-200 transition-colors whitespace-nowrap"
           >
             Speaking Engagements
           </button>
 
           <button
             onClick={() => document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' })}
-            className="w-full md:w-auto px-[20px] py-[12px] bg-white text-[#1d1d1d] font-inter font-semibold text-lg hover:bg-zinc-200 transition-colors whitespace-nowrap"
+            className="w-full md:w-auto px-[24px] py-[14px] bg-white text-[#1a1a1a] font-inter font-semibold text-base md:text-lg hover:bg-zinc-200 transition-colors whitespace-nowrap"
           >
             Connect
           </button>

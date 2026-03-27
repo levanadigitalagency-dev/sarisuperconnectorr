@@ -25,9 +25,9 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
   sections,
 }) => {
   return (
-    <div className='flex flex-col md:flex-row flex-col-reverse' id='services'>
-        <div className={`w-full ${imageSrc ? 'md:w-[55%]' : ''} px-[16px] py-16 md:pl-[80px] md:pr-[60px] text-[#1d1d1d] flex flex-col justify-center`} id='servicestext'>
-            <h1 className='text-4xl font-bold mb-8'>{title}</h1>
+    <div className='flex flex-col-reverse md:flex-row' id='services'>
+        <div className={`w-full ${imageSrc ? 'md:w-[55%]' : ''} px-[20px] py-12 md:pl-[80px] md:pr-[60px] text-[#1d1d1d] flex flex-col justify-center`} id='servicestext'>
+            <h1 className='text-3xl md:text-4xl font-bold mb-8'>{title}</h1>
             <div className='space-y-8'>
                 {sections?.map((section, idx) => (
                   <div key={idx} className={idx === 1 ? '' : ''}>

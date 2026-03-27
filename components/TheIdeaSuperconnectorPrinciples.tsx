@@ -13,53 +13,71 @@ interface InfluencePillar {
   description: string;
 }
 
-const TheIdeaSuperconnectorPrinciples = () => {
+interface TheIdeaSuperconnectorPrinciplesProps {
+  headerLabel?: string;
+  headerTitle?: string;
+  headerDescription?: string;
+  principles?: Principle[];
+  carouselTitle?: string;
+  pillars?: InfluencePillar[];
+  footerText?: string;
+}
+
+const defaultPrinciples: Principle[] = [
+  {
+    number: "01",
+    title: "Aligned Relationships",
+    description:
+      "Meaningful connections built on shared values and mutual understanding create stronger, more sustainable outcomes.",
+  },
+  {
+    number: "02",
+    title: "Trusted Network",
+    description:
+      "Trust within a network builds credibility, opening access to opportunities, partnerships, and influence.",
+  },
+  {
+    number: "03",
+    title: "Shared Vision",
+    description:
+      "A common direction aligns efforts, accelerates collaboration, and drives long-term impact.",
+  },
+];
+
+const defaultPillars: InfluencePillar[] = [
+  {
+    title: "Credibility",
+    description:
+      "Earned through consistent actions, expertise, and the ability to deliver real value over time.",
+  },
+  {
+    title: "Trust",
+    description:
+      "Built through reliability and integrity, forming the foundation of lasting relationships and influence.",
+  },
+  {
+    title: "Right Connections",
+    description:
+      "The ability to connect the right people, ideas, and institutions to create meaningful opportunities.",
+  },
+  {
+    title: "Long-Term Impact",
+    description:
+      "Sustained influence grows when trust, relevance, and strategic collaboration are maintained over time.",
+  },
+];
+
+const TheIdeaSuperconnectorPrinciples = ({
+  headerLabel = "The Idea",
+  headerTitle = "The Superconnector Principles",
+  headerDescription = "Opportunities rarely emerge from isolated effort. They are created through aligned relationships, trusted networks, and a shared vision.",
+  principles = defaultPrinciples,
+  carouselTitle = "True influence is not built through visibility alone, but through credibility and trust developed over time.",
+  pillars = defaultPillars,
+  footerText = "This is the work of a Superconnector—bringing the right people, ideas, and opportunities together at the right time.",
+}: TheIdeaSuperconnectorPrinciplesProps) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
-
-  const principles: Principle[] = [
-    {
-      number: "01",
-      title: "Aligned Relationships",
-      description:
-        "Meaningful connections built on shared values and mutual understanding create stronger, more sustainable outcomes.",
-    },
-    {
-      number: "02",
-      title: "Trusted Network",
-      description:
-        "Trust within a network builds credibility, opening access to opportunities, partnerships, and influence.",
-    },
-    {
-      number: "03",
-      title: "Shared Vision",
-      description:
-        "A common direction aligns efforts, accelerates collaboration, and drives long-term impact.",
-    },
-  ];
-
-  const pillars: InfluencePillar[] = [
-    {
-      title: "Credibility",
-      description:
-        "Earned through consistent actions, expertise, and the ability to deliver real value over time.",
-    },
-    {
-      title: "Trust",
-      description:
-        "Built through reliability and integrity, forming the foundation of lasting relationships and influence.",
-    },
-    {
-      title: "Right Connections",
-      description:
-        "The ability to connect the right people, ideas, and institutions to create meaningful opportunities.",
-    },
-    {
-      title: "Long-Term Impact",
-      description:
-        "Sustained influence grows when trust, relevance, and strategic collaboration are maintained over time.",
-    },
-  ];
 
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -106,22 +124,22 @@ const TheIdeaSuperconnectorPrinciples = () => {
       <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[72px] pt-16 md:pt-24 pb-12">
         <header className="mb-10 md:mb-12">
           <p className="text-[16px] md:text-[20px] mb-3 text-[#333333]" style={{ fontFamily: "'Poppins', sans-serif" }}>
-            The Idea
+            {headerLabel}
           </p>
           <h2 
-            className="text-[#b07b4d] text-[42px] md:text-[56px] lg:text-[64px] leading-[1.1] mb-5" 
+            className="text-[#b07b4d] text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] mb-5" 
             style={{ fontFamily: "'Cormorant', serif" }}
           >
-            The Superconnector Principles
+            {headerTitle}
           </h2>
           <p className="text-[15px] md:text-[18px] leading-[1.6] max-w-[900px] text-[#333333]" style={{ fontFamily: "'Poppins', sans-serif" }}>
-            Opportunities rarely emerge from isolated effort. They are created through aligned relationships, trusted networks, and a shared vision.
+            {headerDescription}
           </p>
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
           {principles.map((principle) => (
-            <div key={principle.number} className="bg-[#f0e4d7] p-5 md:p-6 lg:p-7 rounded-sm">
+            <div key={principle.title} className="bg-[#f0e4d7] p-5 md:p-6 lg:p-7 rounded-sm">
               <span className="block text-[28px] md:text-[32px] font-bold mb-4 text-[#2f2d2d]" style={{ fontFamily: "'Courier Prime', monospace" }}>
                 {principle.number}
               </span>
@@ -141,7 +159,7 @@ const TheIdeaSuperconnectorPrinciples = () => {
       {/* Lower Section with Carousel */}
       <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[72px] py-16 md:py-20">
         <p className="text-[16px] md:text-[18px] leading-[1.6] mb-10 text-[#333333]" style={{ fontFamily: "'Poppins', sans-serif" }}>
-          True influence is not built through visibility alone, but through credibility and trust developed over time.
+          {carouselTitle}
         </p>
 
         <div 
@@ -188,7 +206,7 @@ const TheIdeaSuperconnectorPrinciples = () => {
         </div>
 
         <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#333333]" style={{ fontFamily: "'Poppins', sans-serif" }}>
-          This is the work of a Superconnector—bringing the right people, ideas, and opportunities together at the right time.
+          {footerText}
         </p>
       </div>
     </section>
