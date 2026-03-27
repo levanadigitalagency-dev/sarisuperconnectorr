@@ -28,11 +28,10 @@ const aboutMenuItems = [
 ];
 
 const mainMenuItems = [
-  { label: 'On The Road', href: '/on-the-road' },
   { label: 'The Superconnector Method', href: '/the-superconnector-method' },
   { label: 'Speaking & Advisory', href: '/speaking-advisory' },
   { label: 'Blogs', href: '/blogs' },
-  { label: 'Connect', href: '#connect' },
+  { label: 'Connect', href: '/#connect' },
 ];
 
 const Navbar = () => {

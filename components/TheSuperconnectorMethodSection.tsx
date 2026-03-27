@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface Principle {
@@ -98,33 +99,35 @@ const TheSuperconnectorMethodSection = ({
   return (
     <section className="w-full overflow-hidden">
       <div className="w-full bg-[#f3eee7]">
-        <div className="w-full flex flex-col-reverse md:flex-row items-center px-6 md:px-12 lg:px-[72px] pt-10 md:pt-14 pb-8 md:pb-0">
-          <div className="w-full md:w-[60%] mt-6 md:mt-0">
+        <div className="w-full flex flex-col-reverse md:flex-row items-center px-6 md:px-12 lg:px-[72px] pt-8 md:pt-10 pb-0 min-h-[500px] md:h-[618px] relative overflow-hidden">
+          <div className="w-full md:w-[55%] flex flex-col justify-center mt-6 md:mt-0 py-12 md:py-0">
             <h2
-              className="text-[#2f2d2d] text-[32px] sm:text-[36px] md:text-[52px] lg:text-[68px] leading-[1.05] mb-4 md:mb-6"
+              className="text-[#2f2d2d] text-[32px] sm:text-[38px] md:text-[50px] lg:text-[60px] leading-[1.05] mb-4 md:mb-6 whitespace-nowrap overflow-hidden text-ellipsis"
               style={{ fontFamily: "'Cormorant', serif", fontWeight: 400 }}
             >
               {title}
             </h2>
             <p
-              className="text-[#3b3b3b] text-[15px] sm:text-[16px] md:text-[17px] lg:text-[20px] leading-[1.6] max-w-[680px]"
+              className="text-[#3b3b3b] text-[15px] sm:text-[16px] md:text-[17px] lg:text-[19px] leading-[1.6] max-w-[680px]"
               style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
             >
               {description}
             </p>
           </div>
 
-          <div className="w-full md:w-[40%] mb-3 md:mb-0 relative h-[300px] sm:h-[360px] md:h-[600px] flex justify-center items-end">
-            <img
+          <div className="w-full md:w-[45%] flex justify-center md:items-end h-[400px] md:h-full relative overflow-visible">
+            <Image
               src={imageSrc}
+              width={500}
+              height={500}
               alt={title}
-              className="max-h-full w-auto max-w-full object-contain transition-transform duration-700 ease-in-out hover:scale-105"
+              className="absolute bottom-0 md:bottom-[-20px] h-[90%] w-auto object-contain object-bottom scale-[1.15] md:scale-[1.3] lg:scale-[1.45] origin-bottom"
             />
           </div>
         </div>
       </div>
 
-      <div className="w-full bg-[#e8e0d0]">
+      <div className="w-full bg-[#f8f5eb] border-t border-[#e8dfd2]">
         <div className="w-full px-6 md:px-12 lg:px-[72px] pt-8 md:pt-10 pb-8 md:pb-10">
           <h3
             className="text-[#2f2d2d] text-[40px] md:text-[52px] lg:text-[56px] leading-[1.1] mb-6 md:mb-7"
