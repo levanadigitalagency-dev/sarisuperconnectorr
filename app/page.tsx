@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import PhilosopySection from "@/components/PhilosopySection";
 import Footer from "@/components/Footer";
+import TheSuperconnectorMethodSection from "@/components/TheSuperconnectorMethodSection";
 import { aboutContent } from "@/data/aboutContent";
 import { philosophyContent } from "@/data/philosophyContent";
 
@@ -20,8 +21,7 @@ export default function Home() {
         imageHeight={aboutContent.imageHeight}
         paragraphs={aboutContent.paragraphs}
       />
-      <div className='hidden md:block h-16 bg-[#e8decd]'></div>
-      <div className='hidden md:block h-16'></div>
+      <TheSuperconnectorMethodSection />
       <PhilosopySection
         title={philosophyContent.title}
         subtitle={philosophyContent.subtitle}

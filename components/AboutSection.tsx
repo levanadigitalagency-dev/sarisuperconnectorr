@@ -24,16 +24,19 @@ const AboutSection: React.FC<AboutSectionProps> = ({
       <div className="w-full max-w-[1440px] mx-auto flex flex-col-reverse md:flex-row items-center justify-between md:h-[618px] relative overflow-hidden bg-[#f3efe6]">
         <div className="w-full md:w-[45%] flex justify-center md:items-end h-[400px] md:h-full relative mt-8 md:mt-0">
             {imageSrc && (
-                <img 
-                    src={imageSrc} 
-                    alt="Sari Portrait" 
-                    className="absolute bottom-0 left-[-20px] md:bottom-[-20px] md:left-[0px] h-[100%] w-auto object-contain object-bottom scale-[1.1] md:scale-[1.15] lg:scale-[1.25] origin-bottom-left"
+                <Image
+                  src={imageSrc}
+                  alt={imageAlt}
+                  width={imageWidth}
+                  height={imageHeight}
+                  className="absolute bottom-0 left-[-20px] md:bottom-[-20px] md:left-[0px] h-[100%] w-auto object-contain object-bottom scale-[1.1] md:scale-[1.15] lg:scale-[1.25] origin-bottom-left"
+                  priority
                 />
             )}
         </div>
         <div className="w-full md:w-[55%] flex flex-col justify-center px-8 md:px-0 lg:pr-24 pt-16 md:pt-0">
             <p className="text-[#3b3631] text-[28px] md:text-[36px] leading-[1.3] md:leading-[46px] w-full max-w-[800px] font-light" style={{ fontFamily: "'Cormorant', serif" }}>
-              Access, titles, and visibility don't define real<br className="hidden md:block" />
+              Access, titles, and visibility don&apos;t define real<br className="hidden md:block" />
               influence or power. True leadership is built<br className="hidden md:block" />
               on trust, positioning, and meaningful<br className="hidden md:block" />
               relationships that create lasting impact.
@@ -44,23 +47,13 @@ const AboutSection: React.FC<AboutSectionProps> = ({
       {/* 2. MIDDLE SECTION (About Sari) */}
       <div className="w-full bg-[#e8decd]">
         <div className="w-full max-w-[1440px] mx-auto py-20 px-8 md:px-16 lg:px-[100px] text-[#333333]">
-            <h2 className="text-[#a57a53] text-[28px] md:text-[32px] lg:text-[36px] mb-8 font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>About Sari</h2>
+            <h2 className="text-[#a57a53] text-[28px] md:text-[32px] lg:text-[36px] mb-8 font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+              {title}
+            </h2>
             <div className="space-y-4 lg:space-y-5 text-[15px] md:text-[16px] leading-[1.6] font-normal text-[#333333]" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                <p>
-                    Sari Kusumaningrum is a senior communications strategist, global business connector, and hospitality leader with over two decades of experience spanning<br className="hidden lg:block" />
-                    media, corporate reputation, and international relations. She currently serves as Senior Director of Corporate Communications & PR at Archipelago International,<br className="hidden lg:block" />
-                    Southeast Asia's largest privately owned hotel management company, overseeing regional communications strategy across multiple markets.
-                </p>
-                <p>
-                    Sari is Chair of the Argentina-Chile-Peru Bilateral Committee at KADIN, where she facilitates cross-border dialogue and business collaboration between Indonesia<br className="hidden lg:block" />
-                    and Latin America. A former Editor-in-Chief of The Peak Indonesia under Beritasatu Media Holdings, she brings deep expertise in media leadership and strategic<br className="hidden lg:block" />
-                    positioning.
-                </p>
-                <p>
-                    She is also the founder of multiple communications and media platforms, and leads a hospitality-focused training initiative dedicated to developing industry-<br className="hidden lg:block" />
-                    ready professionals. Sari is recognized for building high-level networks that translate into strategic partnerships, reputational growth, and sustainable global<br className="hidden lg:block" />
-                    opportunities.
-                </p>
+              {paragraphs.map((p, idx) => (
+                <p key={idx}>{p}</p>
+              ))}
             </div>
         </div>
       </div>
@@ -106,7 +99,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
                         Hospitality Leadership
                     </h3>
                     <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                        Hospitality is more than an industry—it is a platform for culture, diplomacy, and economic growth. As Senior Director of Corporate Communications & PR at Archipelago International, I lead regional communication strategies across Southeast Asia's largest privately owned hotel management company.
+                        Hospitality is more than an industry—it is a platform for culture, diplomacy, and economic growth. As Senior Director of Corporate Communications & PR at Archipelago International, I lead regional communication strategies across Southeast Asia&apos;s largest privately owned hotel management company.
                     </p>
                 </div>
             </div>

@@ -40,11 +40,11 @@ export default function Navbar() {
         <div className={`hidden md:flex items-center gap-x-[30px] md:text-lg font-medium font-inter ${linkColorClass}`}>
           <Link href="/#home" className={`transition-colors ${hoverColorClass}`}>Home</Link>
           <Link href="/#about" className={`transition-colors ${hoverColorClass}`}>About</Link>
+          <Link href="/theIdeaSuperconnectorPrinciples" className={`transition-colors ${hoverColorClass}`}>The Idea</Link>
           <Link href="/#services" className={`transition-colors ${hoverColorClass}`}>Service</Link>
           <Link href="/#leadership" className={`transition-colors ${hoverColorClass}`}>Leadership roles</Link>
           <Link href="/#advisory" className={`transition-colors ${hoverColorClass}`}>Speaking & advisory</Link>
           <Link href="/blog" className={`transition-colors ${hoverColorClass}`}>Blog</Link>
-          <Link href="/theIdeoTheSuperconnectorPeinciples" className={`transition-colors ${hoverColorClass}`}>Method</Link>
           <Link href="/#connect" className={`transition-colors ${hoverColorClass}`}>Connect</Link>
         </div>
       </div>
@@ -55,11 +55,11 @@ export default function Navbar() {
       >
         <Link href="/#home" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Home</Link>
         <Link href="/#about" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>About</Link>
+        <Link href="/theIdeoTheSuperconnectorPeinciples" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>The Idea</Link>
         <Link href="/#services" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Service</Link>
         <Link href="/#leadership" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Leadership roles</Link>
         <Link href="/#advisory" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Speaking & advisory</Link>
         <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Blog</Link>
-        <Link href="/theIdeoTheSuperconnectorPeinciples" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Method</Link>
         <Link href="/#connect" onClick={() => setIsMobileMenuOpen(false)} className={`transition-colors ${hoverColorClass}`}>Connect</Link>
       </div>
     </nav>
