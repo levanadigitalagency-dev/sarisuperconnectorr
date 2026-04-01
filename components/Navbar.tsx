@@ -34,7 +34,7 @@ const Navbar = () => {
   const [isMobileAboutOpen, setIsMobileAboutOpen] = useState(false);
 
   return (
-    <nav className="relative flex justify-between items-center px-[16px] md:px-[70px] py-5 bg-[#f8f9fa] border-b border-gray-200 z-50">
+    <nav className="fixed top-0 left-0 w-full flex justify-between items-center px-[16px] md:px-[70px] py-5 bg-[#f8f9fa] border-b border-gray-200 z-50">
 
       {/* Logo Section */}
       <Link href="/" className="flex items-center gap-3">

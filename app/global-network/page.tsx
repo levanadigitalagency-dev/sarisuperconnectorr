@@ -4,7 +4,7 @@ import React, { useState, useRef, useCallback } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from '../../components/Navbar';
+
 import Footer from '../../components/Footer';
 
 const networkItems = [
@@ -61,7 +61,7 @@ export default function GlobalNetwork() {
         <title>Global Network - Sari Superconnector</title>
       </Head>
 
-      <Navbar />
+
 
       {/* Header Section */}
       <section className="bg-[#F5F5F5] py-[40px] px-[16px] md:px-[70px]">

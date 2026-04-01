@@ -62,17 +62,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           </h2>
           <div className="space-y-4 lg:space-y-5 text-[15px] md:text-[24px] leading-[1.6] font-normal text-[#333333]" style={{ fontFamily: "'Poppins', sans-serif" }}>
             {paragraphs.map((p, idx) => (
-              <p key={idx}>
-                {p.split(/(Senior Communications Strategist|Global Business Connector|Hospitality Leader|Chair of the Argentina–Chile–Peru Bilateral Committee|Founder of multiple Communications|Media Platforms)/g).map((part, i) =>
-                  /^(Senior Communications Strategist|Global Business Connector|Hospitality Leader|Chair of the Argentina–Chile–Peru Bilateral Committee|Founder of multiple Communications|Media Platforms)$/.test(part) ? (
-                    <span key={`${idx}-${i}`} className="text-[#FE5001] italic text-[36px]" style={{ fontFamily: "'Cormorant', serif" }}>
-                      {part}
-                    </span>
-                  ) : (
-                    <span key={`${idx}-${i}`}>{part}</span>
-                  )
-                )}
-              </p>
+              <p key={idx}>{p}</p>
             ))}
           </div>
         </div>
@@ -105,8 +95,8 @@ const AboutSection: React.FC<AboutSectionProps> = ({
 
             {/* Card 2 */}
             <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-              <h3 className="text-[#FE5001] text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
-                Cross-Border Strategic<br />Facilitation
+              <h3 className="text-[#a57a53] text-[15px] lg:text-[16px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+                Cross-Border Strategic Facilitation
               </h3>
               <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 Global opportunities require context, trust, and alignment. I work with leaders and organizations to connect Indonesia and Latin America, enabling partnerships that drive sustainable economic and institutional growth.
@@ -115,7 +105,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
 
             {/* Card 3 */}
             <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-              <h3 className="text-[#FE5001] text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+              <h3 className="text-[#a57a53] text-[15px] lg:text-[16px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
                 Hospitality Leadership
               </h3>
               <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>

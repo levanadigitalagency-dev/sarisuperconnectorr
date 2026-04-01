@@ -4,7 +4,7 @@
   "heroBackground": "#F5F5F5",
   "cardBackground": "#F2E1D3",
   "cardTextColor": "#333333",
-  "cardTitleColor": "#333333",
+  "cardTitleColor": "#FE5001",
   "cards": [
     {
       "id": "card1",

@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 const blogsData = Array(9).fill(null).map((_, i) => ({
@@ -14,16 +13,14 @@ const blogsData = Array(9).fill(null).map((_, i) => ({
 
 export default function BlogsPage() {
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-[#EDE3D2]">
+    <div className="min-h-screen flex flex-col font-sans bg-[#EDE3D2] pt-[80px]">
       <Head>
         <title>Popular blogs</title>
       </Head>
 
-      <Navbar />
-
       <main className="flex-grow pt-[40px] pb-[80px] px-[16px] md:px-[70px]">
         <h1 className="font-[family-name:var(--font-cormorant)] text-[40px] md:text-[44px] font-bold text-[#333333] mb-2.5">
-          Popular blogs
+          Articles
         </h1>
         <p className="font-[family-name:var(--font-poppins)] text-base text-[#333333] mb-10">
           Insights and reflections on leadership, reputation, and the power of strategic relationship in a connected world.

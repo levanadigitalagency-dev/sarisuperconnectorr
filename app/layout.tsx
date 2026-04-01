@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Courier_Prime, Geist, Geist_Mono, Cormorant, Poppins } from "next/font/google";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -45,7 +46,10 @@ export default function RootLayout({
       lang="en"
       className={`${courierPrime.variable} ${cormorant.variable} ${poppins.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

@@ -97,7 +97,7 @@ const TheSuperconnectorMethodSection = ({
   ],
 }: TheSuperconnectorMethodSectionProps) => {
   return (
-    <section className="w-full overflow-hidden">
+    <section className="w-full overflow-hidden pt-[80px]">
       <div className="w-full bg-[#f3eee7]">
         <div className="w-full flex flex-col-reverse md:flex-row items-center px-6 md:px-12 lg:px-[72px] pt-8 md:pt-10 pb-0 min-h-[500px] md:h-[618px] relative overflow-hidden">
           <div className="w-full md:w-[55%] flex flex-col justify-center mt-6 md:mt-0 py-12 md:py-0">

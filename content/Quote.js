@@ -2,8 +2,8 @@ const quoteCards = [
   {
     id: 1,
     bg: '#F2E1D3',
-    textColor: '#AA7D55',
-    quote: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    textColor: '#6C0608',
+    quote: 'In the digital age, your reputation travels at the speed of light, while your strategy only moves as fast as you can execute it. Never let your narrative lag behind your reality.',
     author: '@sari.kusumaningrum',
     fontFamily: 'Cormorant',
   },
@@ -13,7 +13,7 @@ const quoteCards = [
     textColor: '#8B5E3C',
     quote: 'Vivamus non felis at orci commodo ullamcorper.',
     author: '@sari.kusumaningrum',
-    fontFamily: 'Cormorant, serif',
+    fontFamily: 'Courier Prime, monospace',
   },
   {
     id: 3,

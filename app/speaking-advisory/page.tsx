@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Navbar from '../../components/Navbar';
+
 import Footer from '../../components/Footer';
 import SpeakingAdvisorPage from '../../components/SpeakingAdvisorPage';
 
@@ -11,7 +11,7 @@ export default function SpeakingAdvisoryRoute() {
         <title>Speaking & Advisory - Sari Superconnector</title>
       </Head>
       
-      <Navbar />
+
 
       <main className="flex-grow">
         <SpeakingAdvisorPage />

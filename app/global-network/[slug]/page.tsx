@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import Navbar from '../../../components/Navbar';
+
 import Footer from '../../../components/Footer';
 
 // Use standard React component for Next.js App Router Page
@@ -17,7 +17,7 @@ export default function GlobalNetworkDetail({ params }: { params: { slug: string
         <title>{title} - Global Network</title>
       </Head>
 
-      <Navbar />
+
 
       {/* Header Section (Same as list view) */}
       <section className="bg-[#FFFFFF] pt-[60px] pb-[60px] px-[16px] md:px-[70px]">

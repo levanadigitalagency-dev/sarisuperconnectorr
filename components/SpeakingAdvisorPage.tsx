@@ -57,20 +57,20 @@ const SpeakingAdvisorPage = () => {
     const icons = [iconCard1, iconCard2, iconCard3, iconCard4, iconCard5]
 
     return (
-        <div className="min-h-screen" style={{ backgroundColor: '#F5EFE6' }}>
+        <div className="min-h-screen pt-[80px]" style={{ backgroundColor: '#F5EFE6' }}>
             {/* Hero Section */}
-            <section className="px-8 md:px-[70px] py-12 md:py-16 lg:py-20" style={{ backgroundColor: data.heroBackground }}>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl text-[#AA7D55] font-[500] mb-4 md:mb-6" style={{ fontFamily: 'poppins, sans-serif' }}>
+            <section className="px-8 md:px-[70px] py-12 md:py-16 lg:py-20 " style={{ backgroundColor: data.heroBackground }}>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-[500] mb-4 md:mb-6" style={{ fontFamily: 'poppins, sans-serif' }}>
                     {data.heroTitle}
                 </h1>
                 <p className="text-base md:text-[26px] text-gray-700 leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>
                     {data.heroSubtitle}
                 </p>
                 <div className="py-4">
-                    <h2 className="text-2xl text-black mb-4" style={{ fontFamily: 'cormorant, serif' }}>
+                    <h2 className="text-[18px] text-black mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
                         {data.ctaText}
                     </h2>
-                    <button className="rounded-lg bg-[#AA7D55] px-6 py-3 text-white font-semibold hover:bg-[#956745] transition" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                    <button className="rounded-lg bg-[#FE5001] px-6 py-3 text-white font-semibold hover:bg-[#956745] transition" style={{ fontFamily: 'Poppins, sans-serif' }}>
                         {data.ctaButton}
                     </button>
                 </div>
@@ -81,7 +81,7 @@ const SpeakingAdvisorPage = () => {
                     {data.cards.slice(0, 2).map((card, index) => (
                         <div key={card.id} className="rounded-xl p-6" style={{ backgroundColor: data.cardBackground }}>
                             <Image src={icons[index]} alt={`icon ${index + 1}`} className="mb-4 w-6 h-6" />
-                            <h3 className="text-xl font-semibold mb-2" style={{ color: data.cardTitleColor }}>
+                            <h3 className="text-[30px] font-semibold mb-2" style={{ color: data.cardTitleColor, fontFamily: 'Cormorant, serif' }}>
                                 {card.title}
                             </h3>
                         </div>
@@ -92,7 +92,7 @@ const SpeakingAdvisorPage = () => {
                     {data.cards.slice(2, 5).map((card, index) => (
                         <div key={card.id} className="rounded-xl p-6" style={{ backgroundColor: data.cardBackground }}>
                             <Image src={icons[index + 2]} alt={`icon ${index + 3}`} className="mb-4 w-6 h-6" />
-                            <h3 className="text-lg font-semibold mb-2" style={{ color: data.cardTitleColor }}>
+                            <h3 className="text-[30px] font-semibold mb-2" style={{ color: data.cardTitleColor, fontFamily: 'Cormorant, serif' }}>
                                 {card.title}
                             </h3>
                         </div>

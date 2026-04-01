@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Navbar from '../../components/Navbar';
+
 import Footer from '../../components/Footer';
 import TheIdeaSuperconnectorPrinciples from '../../components/TheIdeaSuperconnectorPrinciples';
 
@@ -10,7 +10,7 @@ export default function TheIdeaPage() {
       <Head>
         <title>The Idea - Sari Superconnector</title>
       </Head>
-      <Navbar />
+
       <main className="flex-grow">
         <TheIdeaSuperconnectorPrinciples />
       </main>
