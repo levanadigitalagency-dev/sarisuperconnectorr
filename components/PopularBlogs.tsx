@@ -31,10 +31,10 @@ const blogs = [
 export default function PopularBlogs() {
   return (
     <section className="bg-[#EDE3D2] py-[40px] px-[16px] md:px-[70px]">
-      <h2 className="font-[family-name:var(--font-cormorant)] text-[40px] md:text-[44px] font-bold text-[#333333] mb-2.5">
-        Popular Blogs
+      <h2 className="font-[family-name:var(--font-Poppins)] text-[40px] md:text-[44px] font-bold text-[#333333] mb-2.5">
+        Articles
       </h2>
-      <p className="font-[family-name:var(--font-poppins)] text-base text-[#333333] mb-10">
+      <p className="font-[family-name:var(--font-poppins)] text-[16px] md:text-[24px] text-base text-[#333333] mb-10">
         Insights and reflections on leadership, reputation, and the power of strategic relationship in a connected world.
       </p>
 
@@ -47,7 +47,7 @@ export default function PopularBlogs() {
             {/* Top border inside to exactly match design */}
             <div className="absolute top-0 left-0 right-0 h-[4px] bg-[#AA7D55]" />
 
-            <h3 className="font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] font-semibold text-[#333333] mb-6 leading-[1.3]">
+            <h3 className="font-[family-name:var(--font-cormorant)] text-[22px] md:text-[26px] font-semibold text-[#333333] mb-6 leading-[1.1]">
               {blog.title}
             </h3>
             <p className="font-[family-name:var(--font-poppins)] text-[#666666] text-[15px] leading-[1.7] mb-8 flex-grow">
@@ -57,7 +57,7 @@ export default function PopularBlogs() {
             <a
               href={blog.href}
               className={`font-[family-name:var(--font-poppins)] text-[15px] font-medium transition-colors flex items-center gap-2 mt-auto w-fit
-                  ${blog.isActive ? 'text-[#AA7D55]' : 'text-[#333333] group-hover:text-[#AA7D55]'}`}
+                  ${blog.isActive ? 'text-[#FE5001]' : 'text-[#333333] group-hover:text-[#FE5001]'}`}
             >
               {blog.linkText}
               <svg
@@ -78,7 +78,7 @@ export default function PopularBlogs() {
         ))}
       </div>
 
-      <Link href="/blogs" className="bg-[#A44A3F] text-[#F5F5F5] font-[family-name:var(--font-poppins)] font-semibold text-[16px] py-[12px] px-[24px] rounded-[6px] hover:opacity-90 transition-opacity mt-10 inline-flex items-center gap-2">
+      <Link href="/blogs" className="bg-[#FE5001] text-[#F5F5F5] font-[family-name:var(--font-poppins)] font-semibold text-[16px] py-[12px] px-[24px] rounded-[6px] hover:opacity-90 transition-opacity mt-10 inline-flex items-center gap-2">
         Read more articles
         <svg
           width="18"

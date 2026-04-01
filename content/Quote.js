@@ -5,7 +5,7 @@ const quoteCards = [
     textColor: '#AA7D55',
     quote: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
     author: '@sari.kusumaningrum',
-    fontFamily: 'Courier Prime, monospace',
+    fontFamily: 'Cormorant',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const quoteCards = [
     textColor: '#8B5E3C',
     quote: 'Vivamus non felis at orci commodo ullamcorper.',
     author: '@sari.kusumaningrum',
-    fontFamily: 'Courier Prime, monospace',
+    fontFamily: 'Cormorant, serif',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const quoteCards = [
     textColor: '#C27D4A',
     quote: 'Simplicity is the ultimate sophistication.',
     author: '@sari.kusumaningrum',
-    fontFamily: 'Courier Prime, monospace',
+    fontFamily: 'Cormorant, serif',
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const quoteCards = [
     textColor: '#A56D34',
     quote: 'Kreasi tanpa batas, inspirasi tanpa akhir.',
     author: '@sari.kusumaningrum',
-    fontFamily: 'Courier Prime, monospace',
+    fontFamily: 'Cormorant, serif',
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const quoteCards = [
     textColor: '#9B6B4A',
     quote: 'Innovation drives progress and change.',
     author: '@sari.kusumaningrum',
-    fontFamily: 'Courier Prime, monospace',
+    fontFamily: 'Cormorant, serif',
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const quoteCards = [
     textColor: '#B87A4F',
     quote: 'Creativity is intelligence having fun.',
     author: '@sari.kusumaningrum',
-    fontFamily: 'Courier Prime, monospace',
+    fontFamily: 'Cormorant, serif',
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const quoteCards = [
     textColor: '#8F5B3A',
     quote: 'The best way to predict the future is to create it.',
     author: '@sari.kusumaningrum',
-    fontFamily: 'Courier Prime, monospace',
+    fontFamily: 'Cormorant, serif',
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const quoteCards = [
     textColor: '#A76F42',
     quote: 'Design is not just what it looks like and feels like. Design is how it works.',
     author: '@sari.kusumaningrum',
-    fontFamily: 'Courier Prime, monospace',
+    fontFamily: 'Cormorant, serif',
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ const quoteCards = [
     textColor: '#C68B5E',
     quote: 'Art is not what you see, but what you make others see.',
     author: '@sari.kusumaningrum',
-    fontFamily: 'Courier Prime, monospace',
+    fontFamily: 'Cormorant, serif',
   },
 ];
 

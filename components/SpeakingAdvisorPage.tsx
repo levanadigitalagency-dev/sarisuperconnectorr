@@ -60,12 +60,20 @@ const SpeakingAdvisorPage = () => {
         <div className="min-h-screen" style={{ backgroundColor: '#F5EFE6' }}>
             {/* Hero Section */}
             <section className="px-8 md:px-[70px] py-12 md:py-16 lg:py-20" style={{ backgroundColor: data.heroBackground }}>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl text-[#AA7D55] font-[500] mb-4 md:mb-6" style={{ fontFamily: 'Cormorant, serif' }}>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl text-[#AA7D55] font-[500] mb-4 md:mb-6" style={{ fontFamily: 'poppins, sans-serif' }}>
                     {data.heroTitle}
                 </h1>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-base md:text-[26px] text-gray-700 leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>
                     {data.heroSubtitle}
                 </p>
+                <div className="py-4">
+                    <h2 className="text-2xl text-black mb-4" style={{ fontFamily: 'cormorant, serif' }}>
+                        {data.ctaText}
+                    </h2>
+                    <button className="rounded-lg bg-[#AA7D55] px-6 py-3 text-white font-semibold hover:bg-[#956745] transition" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                        {data.ctaButton}
+                    </button>
+                </div>
             </section>
 
             <div className="py-12 px-8 md:px-[70px] pb-16">
@@ -76,9 +84,6 @@ const SpeakingAdvisorPage = () => {
                             <h3 className="text-xl font-semibold mb-2" style={{ color: data.cardTitleColor }}>
                                 {card.title}
                             </h3>
-                            <p className="text-sm leading-relaxed" style={{ color: data.cardTextColor }}>
-                                {card.description}
-                            </p>
                         </div>
                     ))}
                 </div>
@@ -90,22 +95,12 @@ const SpeakingAdvisorPage = () => {
                             <h3 className="text-lg font-semibold mb-2" style={{ color: data.cardTitleColor }}>
                                 {card.title}
                             </h3>
-                            <p className="text-sm leading-relaxed" style={{ color: data.cardTextColor }}>
-                                {card.description}
-                            </p>
                         </div>
                     ))}
                 </div>
             </div>
             <div className='py-12 bg-[#F5F5F5] px-8 md:px-[70px] '>
-                <div className="rounded-xl bg-[#F4E1CF] p-8">
-                    <h2 className="text-2xl text-black mb-4" style={{ fontFamily: 'cormorant, serif' }}>
-                        {data.ctaText}
-                    </h2>
-                    <button className="rounded-lg bg-[#AA7D55] px-6 py-3 text-white font-semibold hover:bg-[#956745] transition" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                        {data.ctaButton}
-                    </button>
-                </div>
+                
             </div>
         </div>
     )
