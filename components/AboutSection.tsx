@@ -11,7 +11,7 @@ interface AboutSectionProps {
 }
 
 const AboutSection: React.FC<AboutSectionProps> = ({
-  title = 'Who I Am',
+  title = 'About Sari',
   imageSrc,
   imageAlt = 'About image',
   imageWidth = 512,
@@ -21,38 +21,58 @@ const AboutSection: React.FC<AboutSectionProps> = ({
   return (
     <section id="about" className="w-full font-sans bg-[#f3efe6]">
       {/* 1. TOP SECTION (Quote & Lady) */}
-      <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between md:h-[618px] relative overflow-hidden bg-[#f3efe6]">
-        <div className="w-full md:w-[45%] flex justify-center md:items-end h-[400px] md:h-full relative mt-8 md:mt-0">
+      <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between min-h-[680px] bg-[#f3efe6] overflow-visible">
+
+        {/* LEFT TEXT */}
+        <div className="w-full md:w-[55%] flex items-center justify-center md:justify-start px-6 md:px-16 lg:px-24 py-16 md:py-0">
+          <p
+            className="text-[#3b3631] text-[22px] md:text-[34px] lg:text-[42px] leading-[1.4] max-w-[560px] font-light"
+            style={{ fontFamily: "'Cormorant', serif" }}
+          >
+            Access, titles, and visibility don’t define real influence of power.
+            <br /><br />
+            True <span className="text-[#e0561f] italic">leadership</span> is built on{" "}
+            <span className="text-[#e0561f] italic">trust, positioning,</span> and{" "}
+            <span className="text-[#e0561f] italic">meaningful relationships</span> that create{" "}
+            <span className="text-[#e0561f] italic">lasting impact.</span>
+          </p>
+        </div>
+
+        {/* RIGHT IMAGE */}
+        <div className="w-full md:w-[45%] relative h-[420px] md:h-[680px]">
           {imageSrc && (
             <Image
               src={imageSrc}
               alt={imageAlt}
               width={imageWidth}
               height={imageHeight}
-              className="absolute bottom-0 left-[-20px] md:bottom-[-20px] md:left-[0px] h-[100%] w-auto object-contain object-bottom scale-[1.1] md:scale-[1.15] lg:scale-[1.25] origin-bottom-left"
+              className="absolute bottom-0 right-0 h-full w-auto object-contain object-bottom translate-y-[45%] md:translate-y-[36%] scale-[1.05] md:scale-[1.1]"
               priority
             />
           )}
         </div>
-        <div className="w-full md:w-[55%] flex flex-col justify-center px-6 md:px-0 lg:pr-24 pt-16 md:pt-0">
-          <p className="text-[#3b3631] text-[24px] md:text-[36px] leading-[1.3] md:leading-[46px] w-full max-w-[600px] font-light" style={{ fontFamily: "'Cormorant', serif" }}>
-            Access, titles, and visibility don&apos;t define real
-            influence or power. True leadership is built
-            on trust, positioning, and meaningful
-            relationships that create lasting impact.
-          </p>
-        </div>
+
       </div>
 
       {/* 2. MIDDLE SECTION (About Sari) */}
       <div className="w-full bg-[#e8decd]">
         <div className="w-full py-20 px-8 md:px-16 lg:px-[70px] text-[#333333]">
-          <h2 className="text-[#a57a53] text-[28px] md:text-[32px] lg:text-[36px] mb-8 font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+          <h2 className="text-black text-[28px] md:text-[32px] lg:text-[36px] mb-8 font-semibold" style={{ fontFamily: "'poppins', sans-serif" }}>
             {title}
           </h2>
-          <div className="space-y-4 lg:space-y-5 text-[15px] md:text-[16px] leading-[1.6] font-normal text-[#333333]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <div className="space-y-4 lg:space-y-5 text-[15px] md:text-[24px] leading-[1.6] font-normal text-[#333333]" style={{ fontFamily: "'Poppins', sans-serif" }}>
             {paragraphs.map((p, idx) => (
-              <p key={idx}>{p}</p>
+              <p key={idx}>
+                {p.split(/(Senior Communications Strategist|Global Business Connector|Hospitality Leader|Chair of the Argentina–Chile–Peru Bilateral Committee|Founder of multiple Communications|Media Platforms)/g).map((part, i) =>
+                  /^(Senior Communications Strategist|Global Business Connector|Hospitality Leader|Chair of the Argentina–Chile–Peru Bilateral Committee|Founder of multiple Communications|Media Platforms)$/.test(part) ? (
+                    <span key={`${idx}-${i}`} className="text-[#FE5001] italic text-[36px]" style={{ fontFamily: "'Cormorant', serif" }}>
+                      {part}
+                    </span>
+                  ) : (
+                    <span key={`${idx}-${i}`}>{part}</span>
+                  )
+                )}
+              </p>
             ))}
           </div>
         </div>
@@ -61,13 +81,13 @@ const AboutSection: React.FC<AboutSectionProps> = ({
       {/* 3. BOTTOM SECTION (What I do) */}
       <div className="w-full bg-[#f3efe6]">
         <div className="w-full pt-16 pb-20 px-6 md:px-12 lg:px-[60px] text-[#333333]">
-          <h2 className="text-[#a57a53] text-[28px] md:text-[32px] lg:text-[36px] mb-2 font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>What I do</h2>
+          <h2 className="text-[28px] md:text-[32px] lg:text-[36px] mb-2 font-semibold" style={{ fontFamily: "'poppins', sans-serif" }}>What I do</h2>
 
-          <div className="flex flex-col md:flex-row justify-between items-start mb-10 gap-8">
-            <p className="text-[16px] md:text-[18px] w-full md:w-1/2 font-medium leading-relaxed max-w-[500px]">
+          <div className="flex flex-col justify-between items-start mb-10 gap-8">
+            <p className="text-[16px] md:text-[28px] w-full leading-relaxed max-w-[1000px] ">
               I operate at the intersection of corporate leadership, international diplomacy, and strategic communication.
             </p>
-            <p className="text-[14px] md:text-[16px] md:text-right w-full md:w-1/2 text-[#333] font-semibold pt-8">
+            <p className="text-[14px] md:text-[28px] md:text-left w-full md:w-1/3 text-[#333] ">
               My work Focuses on three Areas :
             </p>
           </div>
@@ -75,7 +95,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 text-[#333333]">
             {/* Card 1 */}
             <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-              <h3 className="text-[#a57a53] text-[15px] lg:text-[16px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+              <h3 className="text-[#FE5001] text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
                 Corporate Reputation & Strategic<br />Communications
               </h3>
               <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>
@@ -85,8 +105,8 @@ const AboutSection: React.FC<AboutSectionProps> = ({
 
             {/* Card 2 */}
             <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-              <h3 className="text-[#a57a53] text-[15px] lg:text-[16px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
-                Cross-Border Strategic Facilitation
+              <h3 className="text-[#FE5001] text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+                Cross-Border Strategic<br />Facilitation
               </h3>
               <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 Global opportunities require context, trust, and alignment. I work with leaders and organizations to connect Indonesia and Latin America, enabling partnerships that drive sustainable economic and institutional growth.
@@ -95,7 +115,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
 
             {/* Card 3 */}
             <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-              <h3 className="text-[#a57a53] text-[15px] lg:text-[16px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+              <h3 className="text-[#FE5001] text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
                 Hospitality Leadership
               </h3>
               <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>

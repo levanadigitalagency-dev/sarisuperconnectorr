@@ -5,7 +5,7 @@ const QuotesPage = () => {
   return (
     <div className="min-h-screen bg-[#FFFFFF] mb-10 ">
       <section className="mx-auto min-h-[150px] min-w-screen bg-[#EDE3D2] max-w-4xl text-center mb-12 justify-center items-center flex px-4">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-[#AA7D55] font-[500]" style={{ fontFamily: 'Cormorant, serif' }}>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl italic font-semibold font-[500]" style={{ fontFamily: 'Cormorant, serif' }}>
           The Quotes
         </h1>
       </section>
@@ -19,7 +19,7 @@ const QuotesPage = () => {
           >
             <div className="h-full w-full flex flex-col justify-between items-center text-center px-4">
               <div className="flex-1 flex items-center justify-center">
-                <p className="text-sm md:text-base leading-relaxed" style={{ fontFamily: card.fontFamily }}>
+                <p className="text-sm md:text-[30px] leading-relaxed" style={{ fontFamily: card.fontFamily }}>
                   {card.quote}
                 </p>
               </div>

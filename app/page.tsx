@@ -6,6 +6,7 @@ import OnTheRoad from '../components/OnTheRoad';
 import PopularBlogs from '../components/PopularBlogs';
 import Connect from '../components/Connect';
 import Footer from '../components/Footer';
+import TheIdeaSuperconnectorPrinciples from '@/components/TheIdeaSuperconnectorPrinciples';
 
 export default function PortfolioHero() {
   return (
@@ -16,8 +17,15 @@ export default function PortfolioHero() {
 
       <Navbar />
       <Hero />
-      <OnTheRoad />
+      <TheIdeaSuperconnectorPrinciples />
       <PopularBlogs />
+      <OnTheRoad
+        images={[
+          '/ontheroad/traveling2.png',
+          '/ontheroad/traveling1.png',
+          '/ontheroad/traveling3.png',
+        ]}
+      />
       <Connect />
       <Footer />
     </div>

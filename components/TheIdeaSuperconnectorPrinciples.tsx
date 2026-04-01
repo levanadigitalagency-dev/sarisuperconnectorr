@@ -124,14 +124,22 @@ const TheIdeaSuperconnectorPrinciples = ({
       <div className="w-full bg-white">
         <div className="w-full px-6 md:px-12 lg:px-[72px] pt-16 md:pt-24 pb-12">
           <header className="mb-10 md:mb-12">
-            <p className="text-[16px] md:text-[20px] mb-3 text-[#2f2d2d]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            <p className="text-[16px] md:text-[44px] mb-3 text-[#2f2d2d] font-semibold" style={{ fontFamily: "'Poppins', sans-serif" }}>
               {headerLabel}
             </p>
             <h2
-              className="text-[#b07b4d] text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] mb-5"
-              style={{ fontFamily: "'Cormorant', serif" }}
+              className="text-black font-semibold text-[32px] md:text-[60px] lg:text-[64px] leading-[1.1] mb-5"
+              style={{ fontFamily: "'Poppins', sans-serif" }}
             >
-              {headerTitle}
+              {headerTitle.includes("Superconnector") ? (
+                <>
+                  {headerTitle.split("Superconnector")[0]}
+                  <span className="text-[#FE5001] md:text-[80px] font-bold" style={{ fontFamily: "'Cormorant', serif" }}>Superconnector</span>
+                  {headerTitle.split("Superconnector")[1]}
+                </>
+              ) : (
+                headerTitle
+              )}
             </h2>
             <p className="text-[15px] md:text-[18px] leading-[1.6] max-w-[900px] text-[#2f2d2d]" style={{ fontFamily: "'Poppins', sans-serif" }}>
               {headerDescription}
@@ -140,14 +148,14 @@ const TheIdeaSuperconnectorPrinciples = ({
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
             {principles.map((principle) => (
-              <div key={principle.title} className="bg-[#F2E1D3] p-6 md:p-8 lg:p-10 rounded-sm">
-                <span className="block text-[28px] md:text-[32px] font-bold mb-4 text-[#2f2d2d]" style={{ fontFamily: "'Courier Prime', monospace" }}>
+              <div key={principle.title} className="bg-[#6E5F54] p-6 md:p-8 lg:p-10 rounded-sm">
+                <span className="block text-[28px] md:text-[32px] font-bold mb-4 text-white" style={{ fontFamily: "'Courier Prime', monospace" }}>
                   {principle.number}
                 </span>
-                <h3 className="text-[16px] md:text-[17px] font-bold mb-3 text-[#2f2d2d]" style={{ fontFamily: "'Courier Prime', monospace" }}>
+                <h3 className="text-[16px] md:text-[36px] font-bold mb-3 text-[#FE5001]" style={{ fontFamily: "'Cormorant', serif" }}>
                   {principle.title}
                 </h3>
-                <p className="text-[14px] md:text-[15px] leading-[1.6] text-[#2f2d2d] opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                <p className="text-[14px] md:text-[16px] leading-[1.6] text-white opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>
                   {principle.description}
                 </p>
               </div>
@@ -158,8 +166,8 @@ const TheIdeaSuperconnectorPrinciples = ({
 
       {/* Lower Section with Carousel */}
       <div className="w-full bg-[#F5EFE6]">
-        <div className="w-full px-6 md:px-12 lg:px-[72px] py-16 md:py-20">
-          <p className="text-[16px] md:text-[18px] leading-[1.6] mb-10 text-[#2f2d2d]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <div className="w-full px-6 mx-auto md:px-12 lg:px-[72px] py-16 md:py-20">
+          <p className="text-[16px] md:text-[30px] leading-[1.6] mb-10 text-[#FE5001] font-bold text-center" style={{ fontFamily: "'Cormorant', serif" }}>
             {carouselTitle}
           </p>
 
@@ -175,18 +183,18 @@ const TheIdeaSuperconnectorPrinciples = ({
             {pillars.map((pillar) => (
               <div
                 key={pillar.title}
-                className="min-w-[80%] md:min-w-[40%] lg:min-w-[30%] snap-start bg-[#F2E1D3] p-6 md:p-8 rounded-sm flex flex-col shadow-sm"
+                className="min-w-[80%] md:min-w-[40%] lg:min-w-[30%] snap-start bg-[#693F19] p-6 md:p-8 rounded-sm flex flex-col shadow-sm"
               >
-                <div className="text-[#b07b4d] mb-4">
+                <div className="text-white mb-4">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                     <path d="m9 12 2 2 4-4" />
                   </svg>
                 </div>
-                <h3 className="text-[17px] md:text-[19px] font-bold mb-3 text-[#2f2d2d]" style={{ fontFamily: "'Courier Prime', monospace" }}>
+                <h3 className="text-[17px] md:text-[34px] font-bold mb-3 text-[#FE5001]" style={{ fontFamily: "'Cormorant', serif" }}>
                   {pillar.title}
                 </h3>
-                <p className="text-[14px] md:text-[15px] leading-[1.6] text-[#2f2d2d] opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                <p className="text-[14px] md:text-[15px] leading-[1.6] text-white opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>
                   {pillar.description}
                 </p>
               </div>
@@ -206,7 +214,7 @@ const TheIdeaSuperconnectorPrinciples = ({
             />
           </div>
 
-          <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#2f2d2d]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <p className="text-[16px] md:text-[24px] leading-[1.6] text-[#2f2d2d] text-center" style={{ fontFamily: "'Poppins', sans-serif" }}>
             {footerText}
           </p>
         </div>

@@ -3,12 +3,24 @@
 import React, { useState, useRef, useCallback } from 'react';
 import Image from 'next/image';
 
-const TOTAL_IMAGES = 5;
+interface OnTheRoadProps {
+  images?: string[];
+}
 
-export default function OnTheRoad() {
+const DEFAULT_IMAGES = [
+  '/images/placeholder.png',
+  '/images/placeholder.png',
+  '/images/placeholder.png',
+  '/images/placeholder.png',
+  '/images/placeholder.png',
+];
+
+export default function OnTheRoad({ images = DEFAULT_IMAGES }: OnTheRoadProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const isScrollingProgrammatically = useRef(false);
+
+  const totalImages = images.length;
 
   const handleScroll = useCallback(() => {
     if (!scrollContainerRef.current || isScrollingProgrammatically.current) return;
@@ -41,7 +53,7 @@ export default function OnTheRoad() {
     const container = scrollContainerRef.current;
 
     // Bounds check
-    const safeIndex = Math.max(0, Math.min(index, TOTAL_IMAGES - 1));
+    const safeIndex = Math.max(0, Math.min(index, totalImages - 1));
     const firstItem = container.children[0] as HTMLElement;
     const targetItem = container.children[safeIndex] as HTMLElement;
     if (!targetItem || !firstItem) return;
@@ -69,28 +81,27 @@ export default function OnTheRoad() {
       </h2>
 
       {/* Static Quotes Text exactly like screenshot */}
-      <div className="font-[family-name:var(--font-poppins)] text-[16px] md:text-[28px] leading-[1.6]">
-        <div className="text-[#A44A3F] mb-4">
+      <div className=" text-[16px] md:text-[48px] leading-[1.6]">
+        <div className="text-[#FE5001] font-[family-name:var(--font-cormorant)] mb-4">
           The world has always been one of my greatest teachers.
         </div>
-        <div className="text-[#333333] mb-4">
-          Beyond boardrooms and conferences,
+        <div className="text-[#333333] mb-4 text-[16px] md:text-[34px] leading-[1.3]">
+          Beyond boardrooms and conferences, travel offers moments of discovery that deepen understanding of
         </div>
         <div className="mb-4 text-[#333333]">
-          <span className="text-[#A44A3F]">travel</span> offers moments of discovery that deepen understanding of
-          <div className="text-[#A44A3F] mt-1">cultures, people, and perspectives.</div>
+          <div className="text-[#FE5001] mt-1 font-[family-name:var(--font-cormorant)]">cultures, people, and perspectives.</div>
         </div>
-        <div className="text-[#333333] mb-4">
+        <div className="text-[#333333] mb-4 text-[16px] md:text-[34px] leading-[1.5]">
           Here are some of the places and journeys that continue
         </div>
-        <div className="text-[#A44A3F]">
+        <div className="text-[#FE5001] font-[family-name:var(--font-cormorant)]">
           to inspire my work and worldview.
         </div>
       </div>
 
       {/* Pill Indicator — immediately below the text */}
       <div className="flex gap-3 mt-8 mb-6 items-center justify-start">
-        {[...Array(TOTAL_IMAGES)].map((_, idx) => (
+        {images.map((_, idx) => (
           <button
             key={idx}
             onClick={() => scrollToSlide(idx)}
@@ -113,9 +124,9 @@ export default function OnTheRoad() {
           className="relative flex gap-4 md:gap-6 overflow-x-auto pb-4 snap-x snap-mandatory"
           style={{ scrollbarWidth: 'none' }}
         >
-          {[...Array(TOTAL_IMAGES)].map((_, idx) => (
+          {images.map((src, idx) => (
             <div key={idx} className="flex-shrink-0 w-[80vw] md:w-[calc((100%-48px)/3)] h-[250px] md:h-[300px] relative rounded-xl overflow-hidden shadow-sm snap-start">
-              <Image src="/images/placeholder.png" alt={`On the road location ${idx + 1}`} fill className="object-cover" />
+              <Image src={src} alt={`On the road location ${idx + 1}`} fill className="object-cover" />
             </div>
           ))}
         </div>

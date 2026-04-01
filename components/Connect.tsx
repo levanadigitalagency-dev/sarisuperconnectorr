@@ -18,8 +18,8 @@ export default function Connect() {
 
         {/* Left Column: Form */}
         <div className="flex-1 w-full flex flex-col">
-          <h2 className="font-[family-name:var(--font-cormorant)] text-[40px] md:text-[44px] font-bold text-[#22333B] mb-2 leading-tight">
-            Connect
+          <h2 className="font-[family-name:var(--font-poppins)] text-[40px] md:text-[44px] font-bold text-[#22333B] mb-2 leading-tight">
+           Let's Connect
           </h2>
           <p className="font-[family-name:var(--font-poppins)] text-[15px] md:text-lg text-[#4A5565] mb-5">
             For strategic advisory, speaking invitations, and institutional collaboration:
@@ -40,13 +40,13 @@ export default function Connect() {
             <div className="flex gap-4 mt-2">
               <button
                 type="submit"
-                className="bg-[#A44A3F] text-[#F5F5F5] font-[family-name:var(--font-poppins)] font-semibold text-[15px] py-[10px] px-[28px] rounded-[6px] hover:opacity-90 transition-opacity"
+                className="bg-[#FE5001] text-[#F5F5F5] font-[family-name:var(--font-poppins)] font-semibold text-[15px] py-[10px] px-[28px] rounded-[6px] hover:opacity-90 transition-opacity"
               >
                 Submit
               </button>
               <button
                 type="reset"
-                className="bg-transparent border border-[#A44A3F] text-[#A44A3F] font-[family-name:var(--font-poppins)] font-semibold text-[15px] py-[10px] px-[20px] rounded-[6px] hover:bg-[#A44A3F]/5 transition-colors"
+                className="bg-transparent border border-[#FE5001] text-[#FE5001] font-[family-name:var(--font-poppins)] font-semibold text-[15px] py-[10px] px-[20px] rounded-[6px] hover:bg-[#FE5001]/5 transition-colors"
               >
                 Clear form
               </button>
@@ -61,24 +61,13 @@ export default function Connect() {
             {/* Static Quote Container */}
             <div className="w-full">
               <div className="min-h-[180px] md:min-h-[200px] flex items-start">
-                <p className="font-[family-name:var(--font-poppins)] text-[22px] md:text-[28px] text-[#22333B] leading-[1.6]">
+                <p className="font-[family-name:var(--font-cormorant)] text-[22px] md:text-[40px] font-bold italic text-[#FE5001] leading-[1.6]">
                   &ldquo;{quotesData[0].text}&rdquo;
                 </p>
               </div>
             </div>
 
-            {/* Static Indicator (Pills) */}
-            <div className="flex gap-3 mb-6 items-center">
-              {[...Array(5)].map((_, idx) => (
-                <div
-                  key={idx}
-                  className={`h-[3px] w-4 rounded-full transition-all duration-300 ${idx === 0 ? 'bg-[#AA7D55]' : 'bg-[#D1D5DC]'
-                    }`}
-                />
-              ))}
-            </div>
-
-            <p className="font-[family-name:var(--font-cormorant)] text-2xl text-[#0F2A44]">
+            <p className="font-[family-name:var(--font-poppins)] text-xl font-bold md:text-[18px] text-[#0F2A44]">
               {quotesData[0].author}
             </p>
           </div>

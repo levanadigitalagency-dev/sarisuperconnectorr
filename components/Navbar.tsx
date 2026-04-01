@@ -16,11 +16,6 @@ const aboutMenuItems = [
     href: '/global-network'
   },
   {
-    title: 'The idea - The Superconnector principle',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Suspendisse magna vulputate proin varius lectus nec.',
-    href: '/the-idea'
-  },
-  {
     title: 'Quotes',
     desc: 'Lorem ipsum dolor sit amet consectetur. Suspendisse magna vulputate proin varius lectus nec.',
     href: '/quotes'
@@ -30,7 +25,7 @@ const aboutMenuItems = [
 const mainMenuItems = [
   { label: 'The Superconnector Method', href: '/the-superconnector-method' },
   { label: 'Speaking & Advisory', href: '/speaking-advisory' },
-  { label: 'Blogs', href: '/blogs' },
+  { label: 'Articles', href: '/blogs' },
   { label: 'Connect', href: '/#connect' },
 ];
 
@@ -52,18 +47,18 @@ const Navbar = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <span className="font-[family-name:var(--font-courier-prime)] text-[#333333] text-[18px] leading-[23px]">
+        <span className="font-[family-name:var(--font-poppins)] text-black text-[18px] leading-[23px] font-semibold">
           Sari Superconnector
         </span>
       </Link>
 
       {/* Desktop Menu */}
       <div
-        className="hidden lg:flex items-center font-[family-name:var(--font-courier-prime)] font-normal text-[16px] leading-[20px]"
+        className="hidden lg:flex items-center font-[family-name:var(--font-poppins)] font-normal text-[16px] leading-[20px]"
         style={{ gap: '30px' }}
       >
         <div className="relative group py-4">
-          <button className="text-[#333333] flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <button className="text-black flex items-center gap-2 hover:opacity-80 transition-opacity">
             About
             <svg strokeWidth={2} className="w-3 h-3 text-black transition-transform duration-300 group-hover:rotate-180" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
@@ -78,10 +73,10 @@ const Navbar = () => {
                 href={item.href}
                 className="group/item p-4 rounded-[12px] hover:bg-[#EAEFF5] transition-colors flex flex-col items-start text-left"
               >
-                <h3 className="font-[family-name:var(--font-courier-prime)] text-[17px] text-[#333333] group-hover/item:text-[#EF4444] mb-1.5 font-semibold transition-colors">
+                <h3 className="font-[family-name:var(--font-poppins)] text-[17px] text-black group-hover/item:text-[#EF4444] mb-1.5 font-semibold transition-colors">
                   {item.title}
                 </h3>
-                <p className="font-[family-name:var(--font-poppins)] text-[13px] text-[#666666] leading-relaxed transition-colors">
+                <p className="font-[family-name:var(--font-poppins)] text-[13px] text-black leading-relaxed transition-colors">
                   {item.desc}
                 </p>
               </Link>
@@ -95,7 +90,7 @@ const Navbar = () => {
             <Link
               key={item.label}
               href={item.href}
-              className={`text-base text-[#333333] hover:opacity-80 transition-opacity ${isConnect ? "font-[family-name:var(--font-poppins)] font-medium text-[#AA7D55]" : ""}`}
+              className={`text-base text-black hover:opacity-80 transition-opacity ${isConnect ? "font-[family-name:var(--font-poppins)] font-medium text-black" : ""}`}
             >
               {item.label}
             </Link>
@@ -107,7 +102,7 @@ const Navbar = () => {
       <div className="lg:hidden">
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="text-gray-600 p-2"
+          className="text-black p-2"
         >
           {isMobileMenuOpen ? (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -126,13 +121,13 @@ const Navbar = () => {
         className={`lg:hidden absolute top-full left-0 w-full bg-[#f8f9fa] shadow-lg transition-all duration-300 overflow-y-auto ${isMobileMenuOpen ? 'max-h-[85vh] opacity-100 border-b border-gray-200' : 'max-h-0 opacity-0'
           }`}
       >
-        <div className="flex flex-col px-[16px] py-4 gap-4 font-[family-name:var(--font-courier-prime)] pb-8">
+        <div className="flex flex-col px-[16px] py-4 gap-4 font-[family-name:var(--font-poppins)] pb-8">
 
           {/* Mobile About Accordion */}
           <div className="flex flex-col border-b border-gray-200 pb-4">
             <button
               onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
-              className="flex justify-between items-center text-[#333333] py-2 text-lg font-semibold"
+              className="flex justify-between items-center text-black py-2 text-lg font-semibold"
             >
               About
               <svg strokeWidth={2} className={`w-4 h-4 transition-transform duration-300 ${isMobileAboutOpen ? 'rotate-180 text-[#AA7D55]' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,8 +137,8 @@ const Navbar = () => {
             <div className={`flex flex-col pl-4 mt-2 gap-4 transition-all duration-300 overflow-hidden ${isMobileAboutOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}>
               {aboutMenuItems.map((item, idx) => (
                 <Link key={idx} href={item.href} className="flex flex-col gap-1 py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="text-base text-[#AA7D55] font-semibold">{item.title}</span>
-                  <span className="text-[13px] text-[#666666] font-[family-name:var(--font-poppins)] leading-relaxed">{item.desc}</span>
+                  <span className="text-base text-black font-semibold">{item.title}</span>
+                  <span className="text-[13px] text-black font-[family-name:var(--font-poppins)] leading-relaxed">{item.desc}</span>
                 </Link>
               ))}
             </div>
@@ -158,7 +153,7 @@ const Navbar = () => {
                   key={item.label}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-lg transition-opacity ${isConnect ? "font-[family-name:var(--font-poppins)] font-medium text-[#AA7D55]" : "text-[#333333]"}`}
+                  className={`text-lg transition-opacity ${isConnect ? "font-[family-name:var(--font-poppins)] font-medium text-black" : "text-black"}`}
                 >
                   {item.label}
                 </Link>

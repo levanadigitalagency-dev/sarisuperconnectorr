@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#A44A3F] py-[40px] px-[16px] md:px-[70px]">
+    <footer className="bg-[#6C0608] py-[40px] px-[16px] md:px-[70px]">
       <div className="flex flex-col">
 
         {/* Top 3 Columns */}
@@ -20,10 +20,10 @@ export default function Footer() {
                 />
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[#F5F5F5] font-[family-name:var(--font-courier-prime)] font-bold text-[18px]">
+                <h3 className="text-[#F5F5F5] font-[family-name:var(--font-poppins)] font-semibold text-[18px]">
                   Sari Kusumaningrum
                 </h3>
-                <span className="text-[#E8AA73] font-[family-name:var(--font-poppins)] text-lg">
+                <span className="text-[#FE5001] font-bold font-[family-name:var(--font-poppins)] text-lg">
                   Superconnector
                 </span>
               </div>
@@ -35,7 +35,7 @@ export default function Footer() {
 
           {/* Middle Column (About Menu) */}
           <div className="md:col-span-4 flex flex-col">
-            <h4 className="text-[#F5F5F5] font-[family-name:var(--font-courier-prime)] font-bold mb-2.5 text-lg">
+            <h4 className="text-[#F5F5F5] font-[family-name:var(--font-poppins)] font-bold mb-2.5 text-lg">
               About
             </h4>
             <ul className="flex flex-col gap-2.5">
@@ -47,9 +47,9 @@ export default function Footer() {
                 'Quotes'
               ].map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="group flex items-center text-[#F5F5F5] hover:text-[#E8AA73] font-[family-name:var(--font-poppins)] text-base transition-colors duration-300">
+                  <a href="#" className="group flex items-center text-[#F5F5F5] hover:text-[#FE5001] font-[family-name:var(--font-poppins)] text-base transition-colors duration-300">
                     {/* Arrow dengan animasi group-hover */}
-                    <span className="opacity-0 -translate-x-2 w-0 group-hover:w-5 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-[#E8AA73]">
+                    <span className="opacity-0 -translate-x-2 w-0 group-hover:w-5 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-[#fe5001]">
                       &rarr;
                     </span>
                     <span>{item}</span>
@@ -70,9 +70,9 @@ export default function Footer() {
                 'Connect'
               ].map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="group flex items-center text-[#F5F5F5] hover:text-[#E8AA73] font-[family-name:var(--font-courier-prime)] text-base transition-colors duration-300">
+                  <a href="#" className="group flex items-center text-[#F5F5F5] hover:text-[#FE5001] font-[family-name:var(--font-poppins)] text-base transition-colors duration-300">
                     {/* Arrow dengan animasi group-hover */}
-                    <span className="opacity-0 -translate-x-2 w-0 group-hover:w-5 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-[#E8AA73]">
+                    <span className="opacity-0 -translate-x-2 w-0 group-hover:w-5 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-[#FE5001]">
                       &rarr;
                     </span>
                     <span>{item}</span>
