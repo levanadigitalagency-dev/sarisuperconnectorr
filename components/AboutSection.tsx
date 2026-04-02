@@ -7,7 +7,7 @@ interface AboutSectionProps {
   imageAlt?: string
   imageWidth?: number
   imageHeight?: number
-  paragraphs: string[]
+  paragraphs: React.ReactNode[]
 }
 
 const AboutSection: React.FC<AboutSectionProps> = ({
@@ -21,32 +21,36 @@ const AboutSection: React.FC<AboutSectionProps> = ({
   return (
     <section id="about" className="w-full font-sans bg-[#f3efe6]">
       {/* 1. TOP SECTION (Quote & Lady) */}
-      <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between min-h-[680px] bg-[#f3efe6] overflow-visible">
+      <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between min-h-[500px] md:min-h-[800px] bg-[#f3efe6] overflow-visible">
 
         {/* LEFT TEXT */}
-        <div className="w-full md:w-[55%] flex items-center justify-center md:justify-start px-6 md:px-16 lg:px-24 py-16 md:py-0">
+        <div className="w-full md:w-[55%] flex items-center justify-center px-6 md:px-16 lg:px-24 py-16 md:py-0">
           <p
-            className="text-[#3b3631] text-[22px] md:text-[34px] lg:text-[42px] leading-[1.4] max-w-[560px] font-light"
-            style={{ fontFamily: "'Cormorant', serif" }}
+            className="text-[#333333] text-[22px] md:text-[28px] leading-tight max-w-[650px] text-center"
+            style={{ fontFamily: "poppins, serif" }}
           >
-            Access, titles, and visibility don’t define real influence of power.
+            Access, titles, and visibility
+            <br />don&rsquo;t define
+            <br />real influence of power.
             <br /><br />
-            True <span className="text-[#e0561f] italic">leadership</span> is built on{" "}
-            <span className="text-[#e0561f] italic">trust, positioning,</span> and{" "}
-            <span className="text-[#e0561f] italic">meaningful relationships</span> that create{" "}
-            <span className="text-[#e0561f] italic">lasting impact.</span>
+            True <span style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }} className="text-[26px] md:text-[40px] text-[#FE5001] italic font-bold">leadership</span> is built on{" "}
+            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[26px] md:text-[40px] text-[#FE5001] italic font-bold">trust,
+              <br />positioning,</span> and{" "} <br />
+            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[26px] md:text-[40px] text-[#FE5001] italic font-bold">meaningful relationships</span>
+            <br />that create{" "}
+            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[26px] md:text-[40px] text-[#FE5001] italic font-bold">lasting impact.</span>
           </p>
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="w-full md:w-[45%] relative h-[420px] md:h-[680px]">
+        <div className="w-full md:w-[45%] relative mt-25 md:mt-0 h-[420px] md:h-[680px]">
           {imageSrc && (
             <Image
               src={imageSrc}
               alt={imageAlt}
               width={imageWidth}
               height={imageHeight}
-              className="absolute bottom-0 right-0 h-full w-auto object-contain object-bottom translate-y-[45%] md:translate-y-[36%] scale-[1.05] md:scale-[1.1]"
+              className="absolute bottom-0 h-full w-auto md:translate-y-[9%] md:scale-[1]"
               priority
             />
           )}
@@ -55,12 +59,12 @@ const AboutSection: React.FC<AboutSectionProps> = ({
       </div>
 
       {/* 2. MIDDLE SECTION (About Sari) */}
-      <div className="w-full bg-[#e8decd]">
+      <div className="w-full bg-[#e8decd] relative z-10">
         <div className="w-full py-20 px-8 md:px-16 lg:px-[70px] text-[#333333]">
           <h2 className="text-black text-[28px] md:text-[32px] lg:text-[36px] mb-8 font-semibold" style={{ fontFamily: "'poppins', sans-serif" }}>
             {title}
           </h2>
-          <div className="space-y-4 lg:space-y-5 text-[15px] md:text-[24px] leading-[1.6] font-normal text-[#333333]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <div className="space-y-4 lg:space-y-3 text-lg md:text-[28px] leading-tight font-normal text-[#333333]" style={{ fontFamily: "'Poppins', sans-serif" }}>
             {paragraphs.map((p, idx) => (
               <p key={idx}>{p}</p>
             ))}
@@ -95,7 +99,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
 
             {/* Card 2 */}
             <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-              <h3 className="text-[#a57a53] text-[15px] lg:text-[16px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+              <h3 className="text-[#FE5001] text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
                 Cross-Border Strategic Facilitation
               </h3>
               <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>
@@ -105,17 +109,18 @@ const AboutSection: React.FC<AboutSectionProps> = ({
 
             {/* Card 3 */}
             <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-              <h3 className="text-[#a57a53] text-[15px] lg:text-[16px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+              <h3 className="text-[#FE5001] text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
                 Hospitality Leadership
               </h3>
               <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 Hospitality is more than an industry—it is a platform for culture, diplomacy, and economic growth. As Senior Director of Corporate Communications & PR at Archipelago International, I lead regional communication strategies across Southeast Asia&apos;s largest privately owned hotel management company.
               </p>
             </div>
+
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 

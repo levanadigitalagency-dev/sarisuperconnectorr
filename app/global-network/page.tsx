@@ -86,9 +86,8 @@ export default function GlobalNetwork() {
               aria-label={`Go to item ${idx + 1}`}
               className="p-2 -m-2 flex items-center justify-center"
             >
-              <span className={`block h-[3px] rounded-full transition-all duration-300 ${
-                activeIndex === idx ? 'w-6 bg-[#AA7D55]' : 'w-4 bg-[#D1D5DC] hover:bg-[#AA7D55]/60'
-              }`} />
+              <span className={`block h-[3px] rounded-full transition-all duration-300 ${activeIndex === idx ? 'w-6 bg-[#AA7D55]' : 'w-4 bg-[#D1D5DC] hover:bg-[#AA7D55]/60'
+                }`} />
             </button>
           ))}
         </div>
@@ -97,7 +96,7 @@ export default function GlobalNetwork() {
         <div
           ref={scrollRef}
           onScroll={handleScroll}
-          className="flex md:hidden gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-[16px] px-[16px]"
+          className="flex md:hidden gap-4 overflow-x-auto snap-x snap-mandatory pb-4 px-[16px]"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {networkItems.map((item) => (
