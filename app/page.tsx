@@ -9,7 +9,7 @@ import { aboutContent } from "@/data/aboutContent";
 import { philosophyContent } from "@/data/philosophyContent";
 
 
-export default function Home() {
+export default function PortfolioHero() {
   return (
     <main className="min-h-screen bg-[#f5f5f5] font-inter">
       <Navbar />

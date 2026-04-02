@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+
 import {
   Cormorant_Garamond,
   Courier_Prime,
@@ -19,6 +20,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
 
 const signatureFont = Great_Vibes({
   weight: "400",
@@ -42,6 +44,8 @@ const courierPrime = Courier_Prime({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
+
+
 
 const poppins = Poppins({
   variable: "--font-poppins",
