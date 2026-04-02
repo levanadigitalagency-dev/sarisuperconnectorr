@@ -20,7 +20,7 @@ export default function GlobalNetworkDetail({ params }: { params: { slug: string
 
 
       {/* Header Section (Same as list view) */}
-      <section className="bg-[#FFFFFF] pt-[60px] pb-[60px] px-[16px] md:px-[70px]">
+      <section className="bg-[#FFFFFF] mt-30 pb-[60px] px-[16px] md:px-[70px]">
         <h1 className="font-[family-name:var(--font-cormorant)] text-[40px] md:text-[48px] font-bold text-[#AA7D55] mb-4">
           Global Network
         </h1>

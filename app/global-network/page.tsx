@@ -61,10 +61,8 @@ export default function GlobalNetwork() {
         <title>Global Network - Sari Superconnector</title>
       </Head>
 
-
-
       {/* Header Section */}
-      <section className="bg-[#F5F5F5] py-[40px] px-[16px] md:px-[70px]">
+      <section className="bg-[#F5F5F5] py-[40px] px-[16px] md:px-[70px] md:mt-20">
         <h1 className="font-[family-name:var(--font-cormorant)] text-[40px] md:text-[44px] font-bold text-[#AA7D55] mb-2.5">
           Global Network
         </h1>
