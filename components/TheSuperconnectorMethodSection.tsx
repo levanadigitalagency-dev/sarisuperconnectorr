@@ -8,8 +8,8 @@ interface Principle {
 }
 
 interface TheSuperconnectorMethodSectionProps {
-  title?: string;
-  description?: string;
+  title?: React.ReactNode;
+  description?: React.ReactNode;
   imageSrc?: string;
   principlesTitle?: string;
   topRowPrinciples?: Principle[];
@@ -80,11 +80,21 @@ const defaultBottomRow: Principle[] = [
 ];
 
 const cardClass =
-  "w-full bg-white border border-[#e4d9ca] rounded-[10px] px-4 py-5 md:px-5 md:py-5 lg:px-6 lg:py-6 shadow-sm";
+  "w-full bg-white border border-[#e4d9ca] rounded-[10px] px-4 py-5 md:px-5 md:py-5 lg:px-6 lg:py-6 smb-8 hadow-sm";
 
 const TheSuperconnectorMethodSection = ({
-  title = "The Superconnector Method",
-  description = "Sari Kusumaningrum speaks and advises on the intersection of leadership, reputation, and global connectivity.",
+  title = (
+    <>
+      <span style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 600 }} className="text-4xl md:text-6xl text-[#333333]">The </span>
+      <span className="text-[44px] md:text-[80px] text-[#FE5001] italic" style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }}>Superconnector</span><br />
+      <span style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 600 }} className="text-4xl md:text-6xl text-[#333333]">Method™</span>
+    </>
+  ),
+  description = (
+    <>
+      Sari Kusumaningrum speaks and advises on the intersection of <span className="text-[20px] md:text-[40px] text-[#FE5001] italic" style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }}>leadership, reputation,</span> and <span className="text-[20px] md:text-[40px] text-[#FE5001] italic" style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }}>global connectivity.</span>
+    </>
+  ),
   imageSrc = "/white-shirt-woman.png",
   principlesTitle = "The Core Principles",
   topRowPrinciples = defaultTopRow,
@@ -97,37 +107,39 @@ const TheSuperconnectorMethodSection = ({
   ],
 }: TheSuperconnectorMethodSectionProps) => {
   return (
-    <section className="w-full overflow-hidden pt-[80px]">
+    <section className="w-full overflow-hidden">
       <div className="w-full bg-[#f3eee7]">
-        <div className="w-full flex flex-col-reverse md:flex-row items-center px-6 md:px-12 lg:px-[72px] pt-8 md:pt-10 pb-0 min-h-[500px] md:h-[618px] relative overflow-hidden">
-          <div className="w-full md:w-[55%] flex flex-col justify-center mt-6 md:mt-0 py-12 md:py-0">
+        <div className="w-full flex flex-col-reverse md:flex-row px-6 md:px-12 lg:px-[72px] pt-8 md:pt-10 pb-0 min-h-[730px] md:h-[618px] relative overflow-visible">
+          <div className="order-2 md:order-1 w-full md:w-[55%] flex flex-col justify-center pb-12 md:py-0 z-10 text-center md:text-left">
             <h2
-              className="text-[#2f2d2d] text-[32px] sm:text-[38px] md:text-[50px] lg:text-[60px] leading-[1.05] mb-4 md:mb-6 whitespace-nowrap overflow-hidden text-ellipsis"
-              style={{ fontFamily: "'Cormorant', serif", fontWeight: 400 }}
+              className="text-[40px] sm:text-[46px] md:text-[56px] lg:text-[64px] leading-[1.1] mb-2 md:mb-4 pt-4 md:pt-0"
             >
               {title}
             </h2>
             <p
-              className="text-[#3b3b3b] text-[15px] sm:text-[16px] md:text-[17px] lg:text-[19px] leading-[1.6] max-w-[680px]"
+              className="text-[#333333] text-[16px] sm:text-[18px] md:text-[28px] leading-[1.5] max-w-[680px] mx-auto md:mx-0"
               style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 400 }}
             >
               {description}
             </p>
           </div>
 
-          <div className="w-full md:w-[45%] flex justify-center md:items-end h-[400px] md:h-full relative overflow-visible">
-            <Image
-              src={imageSrc}
-              width={500}
-              height={500}
-              alt={title}
-              className="absolute bottom-0 md:bottom-[-20px] h-[90%] w-auto object-contain object-bottom scale-[1.15] md:scale-[1.3] lg:scale-[1.45] origin-bottom"
-            />
+          {/* Image pinned to bottom-right of the section */}
+          <div className="order-1 md:order-2 w-full md:w-[45%] relative h-[420px] md:h-[815px] md:mb-0">
+            {imageSrc && (
+              <Image
+                src={imageSrc}
+                alt="sari"
+                width={700}
+                height={700}
+                className="absolute bottom-0 right-0 h-full w-auto object-contain object-bottom translate-y-[-50%] md:translate-y-[15%] scale-[2] md:scale-[1.5]"
+              />
+            )}
           </div>
         </div>
       </div>
 
-      <div className="w-full bg-[#f8f5eb] border-t border-[#e8dfd2]">
+      <div className="w-full bg-[#f8f5eb] border-t border-[#e8dfd2] relative z-10">
         <div className="w-full px-6 md:px-12 lg:px-[72px] pt-8 md:pt-10 pb-8 md:pb-10">
           <h3
             className="text-[#2f2d2d] text-[40px] md:text-[52px] lg:text-[56px] leading-[1.1] mb-6 md:mb-7"
