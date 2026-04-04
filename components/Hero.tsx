@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Image from 'next/image';
+
 const Hero = () => {
   return (
     <main className="min-h-[100dvh] md:h-screen w-full flex flex-col-reverse md:flex-row">
@@ -38,10 +40,12 @@ const Hero = () => {
       {/* Right Image Box */}
       {/* Perbaikan: Karena parent sudah h-screen di desktop, flex-1 cukup. Di mobile beri tinggi tetap. */}
       <div className="w-full h-[40vh] md:h-auto md:flex-1 relative bg-[#e8e8e6]">
-        <img
+        <Image
           src="/images/sari.png"
           alt="Sari Portrait"
-          className="absolute inset-0 w-full h-full object-cover object-top"
+          fill
+          unoptimized
+          className="object-cover object-top"
         />
       </div>
     </main>

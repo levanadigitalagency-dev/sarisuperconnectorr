@@ -4,7 +4,7 @@ export const networkItems = [
     title: "Archipelago International",
     subtitle: "Senior Director, Corporate Communications & PR",
     image: "/images/ArchiPelagoInternational.png",
-    detailImage: "/images/archipelagointernational.png",
+    detailImage: "/images/ArchiPelagoInternational.png",
     content: [
       "Archipelago is Southeast Asia’s largest privately owned hotel management group, operating more than 45,000 rooms across 300+ hotels in Southeast Asia, Latin America, the Caribbean, the Middle East, and Oceania. With 13 award-winning brands—including Aston, Alana, Huxley, Kamuela, Avanika, Harper, Quest, Four Corners, Neo, fave, Nordic, Powered by Archipelago, and Aston Collection—the company is recognized as one of the region’s most reliable and fastest-growing hospitality leaders.",
       "Headquartered in Jakarta, Archipelago brings decades of experience in building scalable hotel brands and managing extensive accommodation portfolios worldwide. Its asset-light, tech-driven, and high-governance approach supports rapid expansion across key global markets, including Southeast Asia, MENA, Oceania, and LATAM.",
@@ -16,8 +16,8 @@ export const networkItems = [
     id: "kadin",
     title: "KADIN Indonesia",
     subtitle: "Chair, Argentina-Chile-Peru Bilateral Committee",
-    image: "/images/KadinIndonesia.png",
-    detailImage: "/images/kadinIndonesia.svg",
+    image: "/images/KadinIndonesia.svg",
+    detailImage: "/images/KadinIndonesia.svg",
     content: [
       "The Indonesian Chamber of Commerce and Industry (KADIN Indonesia) is the national umbrella organization for the business community in Indonesia, established by law to represent the interests of private sector enterprises across all industries.",
       "KADIN serves as a strategic partner to the government in advancing economic growth, trade, and investment, while promoting a conducive business environment. It brings together entrepreneurs, industry leaders, and business associations to strengthen collaboration, innovation, and competitiveness at both national and international levels.",
@@ -29,8 +29,8 @@ export const networkItems = [
     id: "the-s-media-group",
     title: "The S Media Group",
     subtitle: "Founder of thesmedia.id, rsvpclique.com, rsvpjakarta.com",
-    image: "/images/SMediaGrup.png",
-    detailImage: "/images/SMediaGrup.png",
+    image: "/images/SmediaGroup.png",
+    detailImage: "/images/SmediaGroup.png",
     isSmedia: true,
     content: [
       "Established in 2020 in Jakarta, Indonesia, THE S MEDIA GROUP is a leading digital media and communications agency. The group owns and operates several platforms tailored to diverse market segments:"

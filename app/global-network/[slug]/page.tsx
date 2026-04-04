@@ -110,11 +110,13 @@ export default async function GlobalNetworkDetail({
         </div>
 
         <div className="md:w-1/2 flex justify-end items-start mt-10 md:mt-0">
-          <div className="relative w-full aspect-[4/3] md:aspect-auto">
-            <img
+          <div className="relative w-full aspect-[16/10] md:max-w-[557px] rounded-[16px] overflow-hidden">
+            <Image
               src={item.detailImage || item.image}
               alt={item.title}
-              className="w-full h-auto object-cover rounded-[16px] shadow-sm"
+              fill
+              unoptimized
+              className="object-cover"
             />
           </div>
         </div>

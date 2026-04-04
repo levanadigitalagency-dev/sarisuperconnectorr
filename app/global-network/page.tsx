@@ -44,11 +44,12 @@ export default function GlobalNetwork() {
               key={item.id}
               className="flex-shrink-0 w-[85vw] flex flex-col snap-start"
             >
-              <div className="relative w-full rounded-[12px] overflow-hidden mb-4">
+              <div className="relative w-full rounded-[12px] overflow-hidden mb-4 aspect-[16/10]">
                 <Image 
                   src={item.image} 
                   alt={item.title} 
                   fill 
+                  unoptimized
                   className="object-cover" 
                 />
               </div>
@@ -85,7 +86,8 @@ export default function GlobalNetwork() {
                   src={item.image} 
                   alt={item.title} 
                   fill 
-                  className="object-cover group-hover:scale-[1.02] transition-transform duration-500" 
+                  unoptimized
+                  className="object-cover" 
                 />
               </div>
               <h3 className="font-[family-name:var(--font-poppins)] font-semibold text-[#2a2a2a] text-[18px] leading-[1.2] mt-4 mb-1">{item.title}</h3>
