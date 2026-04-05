@@ -41,8 +41,8 @@ export default async function GlobalNetworkDetail({
         </h1>
         <p className="max-w-none font-[family-name:var(--font-poppins)] text-[18px] md:text-[20px] lg:text-[22px] leading-[1.55] text-[#2b2b2b] tracking-[-0.01em] mb-8">
           My work connects <span className="font-semibold">leaders, institutions,</span> and <span className="font-semibold">communities</span> across industries and regions.<br className="hidden lg:block" />
-          These roles and platforms <span className="italic text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[26px]">reflect the ecosystems</span> where <span className="italic text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[26px]">collaboration</span> and <span className="italic text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[26px]">opportunity</span><br className="hidden lg:block" />
-          continue to <span className="italic text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[26px]">grow.</span>
+          These roles and platforms <span className="font-semibold text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[28px] lg:text-[28px]">reflect the ecosystems</span> where <span className="font-semibold text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[28px]">collaboration</span> and <span className="font-semibold text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[28px]">opportunity</span><br className="hidden lg:block" />
+          continue to <span className="font-semibold text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[28px]">grow.</span>
         </p>
       </section>
 

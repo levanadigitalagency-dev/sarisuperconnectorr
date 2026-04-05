@@ -20,8 +20,8 @@ export default function GlobalNetwork() {
         </h1>
         <p className="max-w-none font-[family-name:var(--font-poppins)] text-[18px] md:text-[20px] lg:text-[22px] leading-[1.55] text-[#2b2b2b] tracking-[-0.01em] mb-8">
           My work connects <span className="font-semibold">leaders, institutions,</span> and <span className="font-semibold">communities</span> across industries and regions.<br className="hidden lg:block" />
-          These roles and platforms <span className="italic text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[26px]">reflect the ecosystems</span> where <span className="italic text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[26px]">collaboration</span> and <span className="italic text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[26px]">opportunity</span><br className="hidden lg:block" />
-          continue to <span className="italic text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[26px]">grow.</span>
+          These roles and platforms <span className="text-[#fe5a00] font-semibold font-[family-name:var(--font-cormorant)] text-[22px] md:text-[28px] lg:text-[26px]">reflect the ecosystems</span> where <span className="font-semibold text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[28px] lg:text-[26px]">collaboration</span> and <span className="font-semibold text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[26px]">opportunity</span><br className="hidden lg:block" />
+          continue to <span className="text-[#fe5a00] font-[family-name:var(--font-cormorant)] text-[22px] md:text-[24px] lg:text-[26px]">grow.</span>
         </p>
       </section>
 
@@ -53,13 +53,13 @@ export default function GlobalNetwork() {
                   className="object-cover" 
                 />
               </div>
-              <h3 className="font-[family-name:var(--font-poppins)] font-semibold text-[#2a2a2a] text-[20px] leading-[1.2] mt-3 mb-1">{item.title}</h3>
+              <h3 className="font-[family-name:var(--font-poppins)] font-semibold text-[#2a2a2a] text-[20px]  leading-[1.2] mt-3 mb-1">{item.title}</h3>
               {item.id === 'the-s-media-group' ? (
-                <p className="font-[family-name:var(--font-cormorant)] italic text-[#fe5a00] text-[20px] leading-tight">
+                <p className="font-[family-name:var(--font-cormorant)] text-[#FE5001] text-[20px] md:text-[28px] leading-tight">
                   Founder of <span className="underline">thesmedia.id</span>, <span className="underline">rsvpclique.com</span>, <span className="underline">rsvpjakarta.com</span>
                 </p>
               ) : (
-                <p className="font-[family-name:var(--font-cormorant)] italic text-[#FE5001] text-[20px] leading-tight">{item.subtitle}</p>
+                <p className="font-[family-name:var(--font-cormorant)] text-[#FE5001] text-[20px] md:text-[28px] leading-tight">{item.subtitle}</p>
               )}
             </Link>
           ))}
@@ -92,11 +92,11 @@ export default function GlobalNetwork() {
               </div>
               <h3 className="font-[family-name:var(--font-poppins)] font-semibold text-[#2a2a2a] text-[18px] leading-[1.2] mt-4 mb-1">{item.title}</h3>
               {item.id === 'the-s-media-group' ? (
-                <p className="font-[family-name:var(--font-cormorant)] italic text-[#fe5a00] text-[16px] leading-[1.2]">
+                <p className="font-semibold font-[family-name:var(--font-cormorant)] text-[#fe5a00] text-[16px] md:text-[20px] leading-[1.2]">
                   Founder of <span className="underline cursor-pointer">thesmedia.id</span>, <span className="underline cursor-pointer">rsvpclique.com</span>, <span className="underline cursor-pointer">rsvpjakarta.com</span>
                 </p>
               ) : (
-                <p className="font-[family-name:var(--font-cormorant)] italic text-[#fe5a00] text-[16px] leading-[1.2]">{item.subtitle}</p>
+                <p className="font-semibold font-[family-name:var(--font-cormorant)] text-[#fe5a00] text-[16px] md:text-[22px] leading-[1.2]">{item.subtitle}</p>
               )}
             </Link>
           ))}

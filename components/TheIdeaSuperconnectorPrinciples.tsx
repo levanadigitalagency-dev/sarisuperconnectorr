@@ -186,7 +186,7 @@ const TheIdeaSuperconnectorPrinciples = ({
               {headerTitle.includes("Superconnector") ? (
                 <>
                   {headerTitle.split("Superconnector")[0]}
-                  <span className="text-[#FE5001] md:text-[80px] font-bold" style={{ fontFamily: "'Cormorant', serif" }}>Superconnector</span>
+                  <span className="text-[#FE5001] md:text-[80px] font-bold italic" style={{ fontFamily: "'Cormorant', serif" }}>Superconnector</span>
                   {headerTitle.split("Superconnector")[1]}
                 </>
               ) : (
@@ -219,7 +219,7 @@ const TheIdeaSuperconnectorPrinciples = ({
       {/* Lower Section with Carousel */}
       <div className="w-full bg-[#F5EFE6]">
         <div className="w-full px-6 mx-auto md:px-12 lg:px-[72px] py-16 md:py-20">
-          <p className="text-[16px] md:text-[30px] leading-[1.6] mb-10 text-[#FE5001] font-bold text-center" style={{ fontFamily: "'Cormorant', serif" }}>
+          <p className="text-[22px] md:text-[30px] leading-[1.6] mb-10 text-[#FE5001] font-bold text-center" style={{ fontFamily: "'Cormorant', serif" }}>
             {carouselTitle}
           </p>
 
@@ -243,7 +243,7 @@ const TheIdeaSuperconnectorPrinciples = ({
                     <path d="m9 12 2 2 4-4" />
                   </svg>
                 </div>
-                <h3 className="text-[17px] md:text-[34px] font-bold mb-3 text-[#FE5001]" style={{ fontFamily: "'Cormorant', serif" }}>
+                <h3 className="text-[24px] md:text-[34px] font-bold mb-3 text-[#FE5001]" style={{ fontFamily: "'Cormorant', serif" }}>
                   {pillar.title}
                 </h3>
                 <p className="text-[14px] md:text-[15px] leading-[1.6] text-white opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>

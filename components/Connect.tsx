@@ -18,7 +18,7 @@ export default function Connect() {
 
         {/* Left Column: Form */}
         <div className="flex-1 w-full flex flex-col">
-          <h2 className="font-[family-name:var(--font-poppins)] text-[40px] md:text-[44px] font-bold text-[#22333B] mb-2 leading-tight">
+          <h2 className="font-[family-name:var(--font-poppins)] text-[34px] md:text-[44px] font-bold text-[#22333B] mb-2 leading-tight">
            Let's Connect
           </h2>
           <p className="font-[family-name:var(--font-poppins)] text-[15px] md:text-lg text-[#4A5565] mb-5">

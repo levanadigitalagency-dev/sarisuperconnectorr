@@ -179,7 +179,7 @@ const TheSuperconnectorMethodSection = ({
           <div className="flex flex-col items-start md:items-center justify-between gap-5 mt-5">
 
             <p
-              className="text-[#FE5001] text-[14px] md:text-[30px] leading-tight md:text-center max-w-prose"
+              className="text-[#FE5001] text-[20px] md:text-[30px] leading-tight md:text-center max-w-prose"
               style={{ fontFamily: "'Cormorant', sans-serif", fontWeight: 500 }}
             >
               {footerQuoteLines.map((line, i) => (

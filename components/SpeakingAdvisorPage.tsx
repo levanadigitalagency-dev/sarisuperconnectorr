@@ -81,7 +81,7 @@ const SpeakingAdvisorPage = () => {
           {data.cards.slice(0, 2).map((card, index) => (
             <div key={card.id} className="rounded-xl p-6" style={{ backgroundColor: data.cardBackground }}>
               <Image src={icons[index]} alt={`icon ${index + 1}`} className="mb-4 w-6 h-6" />
-              <h3 className="text-[30px] font-semibold mb-2" style={{ color: data.cardTitleColor, fontFamily: 'Cormorant, serif' }}>
+              <h3 className="text-[24px] md:text-[30px] font-semibold mb-2" style={{ color: data.cardTitleColor, fontFamily: 'Cormorant, serif' }}>
                 {card.title}
               </h3>
             </div>
@@ -92,7 +92,7 @@ const SpeakingAdvisorPage = () => {
           {data.cards.slice(2, 5).map((card, index) => (
             <div key={card.id} className="rounded-xl p-6" style={{ backgroundColor: data.cardBackground }}>
               <Image src={icons[index + 2]} alt={`icon ${index + 3}`} className="mb-4 w-6 h-6" />
-              <h3 className="text-[30px] font-semibold mb-2" style={{ color: data.cardTitleColor, fontFamily: 'Cormorant, serif' }}>
+              <h3 className="text-[24px] md:text-[30px] font-semibold mb-2" style={{ color: data.cardTitleColor, fontFamily: 'Cormorant, serif' }}>
                 {card.title}
               </h3>
             </div>

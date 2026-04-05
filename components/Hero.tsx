@@ -44,7 +44,7 @@ const Hero = () => {
 
       {/* Right Image Box */}
       {/* Perbaikan: Karena parent sudah h-screen di desktop, flex-1 cukup. Di mobile beri tinggi tetap. */}
-      <div className="w-full h-[40vh] md:h-auto md:flex-1 relative bg-[#e8e8e6]">
+      <div className="w-full h-[60vh] md:h-auto md:flex-1 relative bg-[#e8e8e6]">
         <Image
           src="/images/HeroImage.svg"
           alt="Sari Portrait"
