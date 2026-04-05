@@ -78,7 +78,7 @@ export default function PopularBlogs() {
         ))}
       </div>
 
-      <Link href="/blogs" className="bg-[#BC5A3D] text-[#F5F5F5] font-[family-name:var(--font-poppins)] font-semibold text-[16px] py-[12px] px-[24px] rounded-[6px] hover:opacity-90 transition-opacity mt-10 inline-flex items-center gap-2">
+      <Link href="/blogs" className="bg-[#FE5001] text-[#F5F5F5] font-[family-name:var(--font-poppins)] font-semibold text-[16px] py-[12px] px-[24px] rounded-[6px] hover:opacity-90 transition-opacity mt-10 inline-flex items-center gap-2">
         Read more articles
         <svg
           width="18"
