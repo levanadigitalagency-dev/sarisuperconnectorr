@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
 
           <p className="text-[#F5F5F5] font-[family-name:var(--font-poppins)] font-normal text-[15px] md:text-[28px] leading-[28px] md:leading-[33px] mb-[25px]">
-            Connecting <span className="text-[#FE5001] font-[family-name:var(--font-cormorant)] font-bold italic md:text-[43px]">brands, governments, and global opportunities</span> through strategic communication, diplomacy, and hospitality leadership. </p>
+            Connecting <span className="text-[#FE5001] font-[family-name:var(--font-cormorant)] font-bold italic text-[20px] md:text-[43px]">brands, governments, and global opportunities</span> through strategic communication, diplomacy, and hospitality leadership. </p>
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">

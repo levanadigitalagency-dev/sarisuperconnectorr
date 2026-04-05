@@ -81,7 +81,7 @@ export default function OnTheRoad({ images = DEFAULT_IMAGES }: OnTheRoadProps) {
       </h2>
 
       {/* Static Quotes Text exactly like screenshot */}
-      <div className=" text-[16px] md:text-[48px] leading-[1.6]">
+      <div className=" text-[24px] md:text-[48px] leading-[1.6]">
         <div className="text-[#FE5001] italic font-semibold font-[family-name:var(--font-cormorant)] mb-4">
           The world has always been one of my greatest teachers.
         </div>

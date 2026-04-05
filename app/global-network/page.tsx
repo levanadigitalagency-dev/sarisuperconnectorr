@@ -53,13 +53,13 @@ export default function GlobalNetwork() {
                   className="object-cover" 
                 />
               </div>
-              <h3 className="font-[family-name:var(--font-poppins)] font-semibold text-[#2a2a2a] text-[18px] leading-[1.2] mt-3 mb-1">{item.title}</h3>
+              <h3 className="font-[family-name:var(--font-poppins)] font-semibold text-[#2a2a2a] text-[20px] leading-[1.2] mt-3 mb-1">{item.title}</h3>
               {item.id === 'the-s-media-group' ? (
-                <p className="font-[family-name:var(--font-cormorant)] italic text-[#fe5a00] text-[16px] leading-tight">
+                <p className="font-[family-name:var(--font-cormorant)] italic text-[#fe5a00] text-[20px] leading-tight">
                   Founder of <span className="underline">thesmedia.id</span>, <span className="underline">rsvpclique.com</span>, <span className="underline">rsvpjakarta.com</span>
                 </p>
               ) : (
-                <p className="font-[family-name:var(--font-cormorant)] italic text-[#fe5a00] text-[16px] leading-tight">{item.subtitle}</p>
+                <p className="font-[family-name:var(--font-cormorant)] italic text-[#FE5001] text-[20px] leading-tight">{item.subtitle}</p>
               )}
             </Link>
           ))}
