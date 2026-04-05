@@ -47,7 +47,7 @@ export default function PopularBlogs() {
             {/* Top border inside to exactly match design */}
             <div className="absolute top-0 left-0 right-0 h-[4px] bg-[#9C4D3F]" />
 
-            <h3 className="font-[family-name:var(--font-cormorant)] text-[22px] md:text-[26px] font-bold text-[#333333] mb-6 leading-[1.1]">
+            <h3 className="font-[family-name:var(--font-cormorant)] italic text-[22px] md:text-[26px] font-bold text-[#333333] mb-6 leading-[1.1]">
               {blog.title}
             </h3>
             <p className="font-[family-name:var(--font-poppins)] text-[#666666] text-[15px] leading-[1.7] mb-8 flex-grow">

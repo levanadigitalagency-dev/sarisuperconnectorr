@@ -33,17 +33,17 @@ const AboutSection: React.FC<AboutSectionProps> = ({
             <br />don&rsquo;t define
             <br />real influence of power.
             <br /><br />
-            True <span style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }} className="text-[26px] md:text-[40px] text-[#FE5001] italic font-bold">leadership</span> is built on{" "}
-            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[26px] md:text-[40px] text-[#FE5001] italic font-bold">trust,
+            True <span style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }} className="text-[36px] text-[#FE5001] italic font-bold">leadership</span> is built on{" "}
+            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[36px] text-[#FE5001] italic font-bold">trust,
               <br />positioning,</span> and{" "} <br />
-            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[26px] md:text-[40px] text-[#FE5001] italic font-bold">meaningful relationships</span>
+            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[36px] text-[#FE5001] italic font-bold">meaningful relationships</span>
             <br />that create{" "}
-            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[26px] md:text-[40px] text-[#FE5001] italic font-bold">lasting impact.</span>
+            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[36px] text-[#FE5001] italic font-bold">lasting impact.</span>
           </p>
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="w-full md:w-[45%] relative mt-25 md:mt-0 h-[420px] md:h-[680px]">
+        <div className="w-full md:w-[45%] relative mt-25  md:mt-0 h-[420px] md:h-[680px]">
           {imageSrc && (
             <Image
               src={imageSrc}
@@ -64,7 +64,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           <h2 className="text-black text-[28px] md:text-[32px] lg:text-[36px] mb-8 font-semibold" style={{ fontFamily: "'poppins', sans-serif" }}>
             {title}
           </h2>
-          <div className="space-y-4 lg:space-y-3 text-lg md:text-[28px] leading-tight font-normal text-[#333333]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <div className="space-y-4 lg:space-y-3 text-lg md:text-[23px] leading-tight font-normal text-[#333333]" style={{ fontFamily: "'Poppins', sans-serif" }}>
             {paragraphs.map((p, idx) => (
               <p key={idx}>{p}</p>
             ))}
@@ -89,7 +89,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 text-[#333333]">
             {/* Card 1 */}
             <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-              <h3 className="text-[#FE5001] text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+              <h3 className="text-[#FE5001] text-xl md:text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
                 Corporate Reputation & Strategic<br />Communications
               </h3>
               <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>
@@ -99,7 +99,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
 
             {/* Card 2 */}
             <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-              <h3 className="text-[#FE5001] text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+              <h3 className="text-[#FE5001] text-xl md:text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
                 Cross-Border Strategic Facilitation
               </h3>
               <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>
@@ -109,7 +109,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
 
             {/* Card 3 */}
             <div className="bg-white px-5 py-4 lg:px-8 lg:py-6 border-t-[3px] border-[#a57a53] flex flex-col shadow-sm">
-              <h3 className="text-[#FE5001] text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
+              <h3 className="text-[#FE5001] text-xl md:text-[32px] lg:text-[28px] mb-3 leading-[1.4] font-semibold" style={{ fontFamily: "'Cormorant', serif" }}>
                 Hospitality Leadership
               </h3>
               <p className="text-[#555] text-[15px] lg:text-[16px] leading-[1.8] font-normal" style={{ fontFamily: "'Poppins', sans-serif" }}>

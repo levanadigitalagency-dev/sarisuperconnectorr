@@ -6,6 +6,7 @@ interface Principle {
   number: string;
   title: string;
   description: string;
+  highlights?: string[];
 }
 
 interface InfluencePillar {
@@ -29,20 +30,71 @@ const defaultPrinciples: Principle[] = [
     title: "Aligned Relationships",
     description:
       "Meaningful connections built on shared values and mutual understanding create stronger, more sustainable outcomes.",
+    highlights: ["shared values", "mutual understanding"],
   },
   {
     number: "02",
     title: "Trusted Network",
     description:
       "Trust within a network builds credibility, opening access to opportunities, partnerships, and influence.",
+    highlights: ["credibility", "opportunities", "partnerships", "influence"],
   },
   {
     number: "03",
     title: "Shared Vision",
     description:
       "A common direction aligns efforts, accelerates collaboration, and drives long-term impact.",
+    highlights: ["collaboration"],
   },
 ];
+
+const renderDescriptionWithHighlights = (text: string, highlights?: string[]) => {
+  if (!highlights || highlights.length === 0) {
+    return text;
+  }
+
+  const parts: (string | JSX.Element)[] = [];
+  let lastIndex = 0;
+
+  // Create a regex pattern that matches any of the highlights (case-insensitive)
+  const pattern = new RegExp(
+    `(${highlights.map(h => h.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`,
+    'gi'
+  );
+
+  const matches = text.matchAll(pattern);
+  const matchArray = Array.from(matches);
+
+  if (matchArray.length === 0) {
+    return text;
+  }
+
+  matchArray.forEach((match) => {
+    const matchStart = match.index || 0;
+    const matchEnd = matchStart + match[0].length;
+
+    // Add text before the match
+    if (matchStart > lastIndex) {
+      parts.push(text.substring(lastIndex, matchStart));
+    }
+
+    // Add the highlighted match
+    parts.push(
+      <span key={matchStart} className="text-[#FE5001]" style={{ fontFamily: "'Cormorant', serif", fontWeight: "600", fontSize: "25px" }}>
+        {match[0]}
+      </span>
+    );
+
+    lastIndex = matchEnd;
+  });
+
+  // Add remaining text
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts;
+};
 
 const defaultPillars: InfluencePillar[] = [
   {
@@ -152,11 +204,11 @@ const TheIdeaSuperconnectorPrinciples = ({
                 <span className="block text-[28px] md:text-[32px] font-bold mb-4 text-white" style={{ fontFamily: "'Courier Prime', monospace" }}>
                   {principle.number}
                 </span>
-                <h3 className="text-[16px] md:text-[36px] font-bold mb-3 text-[#FE5001]" style={{ fontFamily: "'Cormorant', serif" }}>
+                <h3 className="text-[24px] md:text-[36px] font-bold mb-3 text-[#FE5001]" style={{ fontFamily: "'Cormorant', serif" }}>
                   {principle.title}
                 </h3>
-                <p className="text-[14px] md:text-[16px] leading-[1.6] text-white opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                  {principle.description}
+                <p className="text-[14px] md:text-[16px] leading-[1.3] text-white opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                  {renderDescriptionWithHighlights(principle.description, principle.highlights)}
                 </p>
               </div>
             ))}

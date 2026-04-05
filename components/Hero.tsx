@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <main className="min-h-[100dvh] md:h-screen w-full flex flex-col-reverse md:flex-row">
+    <main className="min-h-[100dvh] md:h-screen w-full flex flex-col-reverse md:flex-row pt-[80px] md:pt-0">
 
       {/* Left Content Box */}
       <div className="flex-1 bg-[#6C0608] px-[16px] md:px-[70px] py-[40px] flex flex-col justify-center">
