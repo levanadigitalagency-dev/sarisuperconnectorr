@@ -10,7 +10,7 @@ const quoteCards = [
   {
     id: 2,
     bg: '#F5EFE6',
-    textColor: '#8B5E3C',
+    textColor: '#4C4D17',
     quote: 'Networking is transactional; true strategic fasilitation is transformational.  It Moves Beyond intoductions to unlock lasting economic alignment',
     author: '@sari.kusumaningrum',
     fontFamily: 'Cormorant, serif',

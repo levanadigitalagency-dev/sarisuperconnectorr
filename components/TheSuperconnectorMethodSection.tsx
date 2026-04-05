@@ -28,7 +28,7 @@ const defaultTopRow: Principle[] = [
     ),
     title: "Access",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Porta egestas vitae blandit accumsan pharetra risus ultricies cras. Sagittis nulla hac netus suscipit turpis volutpat pellentesque quam.",
+      "Understanding who needs to be in the room.",
   },
   {
     icon: (
@@ -39,7 +39,7 @@ const defaultTopRow: Principle[] = [
     ),
     title: "Trust",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Porta egestas vitae blandit accumsan pharetra risus ultricies cras. Sagittis nulla hac netus suscipit turpis volutpat pellentesque quam.",
+      "Building credibility that allows relationships to grow.",
   },
 ];
 
@@ -53,7 +53,7 @@ const defaultBottomRow: Principle[] = [
     ),
     title: "Alignment",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Porta egestas vitae blandit accumsan pharetra risus ultricies cras. Sagittis nulla hac netus suscipit turpis volutpat pellentesque quam.",
+      "Ensuring shared interests and long-term value.",
   },
   {
     icon: (
@@ -63,7 +63,7 @@ const defaultBottomRow: Principle[] = [
     ),
     title: "Opportunity",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Porta egestas vitae blandit accumsan pharetra risus ultricies cras. Sagittis nulla hac netus suscipit turpis volutpat pellentesque quam.",
+      "Identifying and creating value-driven connections.",
   },
   {
     icon: (
@@ -75,7 +75,7 @@ const defaultBottomRow: Principle[] = [
     ),
     title: "Ecosystem",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Porta egestas vitae blandit accumsan pharetra risus ultricies cras. Sagittis nulla hac netus suscipit turpis volutpat pellentesque quam.",
+      "Creating networks that sustain impact beyond individuals.",
   },
 ];
 

@@ -7,17 +7,17 @@ import React, { useState } from 'react';
 const aboutMenuItems = [
   {
     title: 'About',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Suspendisse magna vulputate proin varius lectus nec.',
+    desc: 'Bridging leadership, reputation, and cross-border opportunity through purposeful relationships.',
     href: '/about'
   },
   {
     title: 'Global Network',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Suspendisse magna vulputate proin varius lectus nec.',
+    desc: 'Connecting leaders, institutions, and markets to unlock meaningful collaborations across regions.',
     href: '/global-network'
   },
   {
     title: 'Quotes',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Suspendisse magna vulputate proin varius lectus nec.',
+    desc: 'Insights on reputation, leadership, and the power of strategic relationships.',
     href: '/quotes'
   },
 ];
