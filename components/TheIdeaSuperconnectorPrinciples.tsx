@@ -126,7 +126,7 @@ const TheIdeaSuperconnectorPrinciples = ({
   principles = defaultPrinciples,
   carouselTitle = "True influence is not built through visibility alone, but through credibility and trust developed over time.",
   pillars = defaultPillars,
-  footerText = "This is the work of a Superconnector—bringing the right people, ideas, and opportunities together at the right time.",
+  // footerText = "This is the work of a Superconnector—bringing the right people, ideas, and opportunities together at the right time.",
 }: TheIdeaSuperconnectorPrinciplesProps) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -267,7 +267,7 @@ const TheIdeaSuperconnectorPrinciples = ({
           </div>
 
           <p className="text-[16px] md:text-[24px] leading-[1.6] text-[#2f2d2d] text-center" style={{ fontFamily: "'Poppins', sans-serif" }}>
-            {footerText}
+            This is the work of a Superconnector—bringing the right people, ideas, and <br /> opportunities together at the right time.
           </p>
         </div>
       </div>

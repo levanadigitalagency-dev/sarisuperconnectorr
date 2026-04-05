@@ -35,7 +35,7 @@ export default function PopularBlogs() {
         Articles
       </h2>
       <p className="font-[family-name:var(--font-poppins)] text-[16px] md:text-[24px] text-base text-[#333333] mb-10">
-        Insights and reflections on <span className="italic text-[#FE5001] text-[28px] md:text-[24px] font-[family-name:var(--font-cormorant)]">leadership, reputation,</span> and <span className="italic text-[#FE5001] text-[24px] md:text-[28px] font-[family-name:var(--font-cormorant)]">the power</span> of <span className="italic text-[#FE5001] text-[24px] md:text-[28px] font-[family-name:var(--font-cormorant)]">strategic relationship</span> in a connected world.
+        Insights and reflections on <span className="font-bold text-[#FE5001] text-[28px] md:text-[28px] font-[family-name:var(--font-cormorant)]">leadership, reputation,</span> and <span className="font-bold text-[#FE5001] text-[24px] md:text-[28px] font-[family-name:var(--font-cormorant)]">the power</span> of <span className="font-bold text-[#FE5001] text-[24px] md:text-[28px] font-[family-name:var(--font-cormorant)]">strategic relationship</span> in a connected world.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-7.5">

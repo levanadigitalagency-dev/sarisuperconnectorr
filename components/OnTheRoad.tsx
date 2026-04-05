@@ -82,19 +82,20 @@ export default function OnTheRoad({ images = DEFAULT_IMAGES }: OnTheRoadProps) {
 
       {/* Static Quotes Text exactly like screenshot */}
       <div className=" text-[24px] md:text-[48px] leading-[1.6]">
-        <div className="text-[#FE5001] italic font-semibold font-[family-name:var(--font-cormorant)] mb-4">
+        <div className="text-[#FE5001] font-semibold font-[family-name:var(--font-cormorant)] mb-4">
           The world has always been one of my greatest teachers.
         </div>
         <div className="text-[#333333] mb-4  leading-[1.3]">
           <div className='text-[16px] md:text-[34px]'>Beyond boardrooms and conferences, travel offers moments of discovery that deepen understanding of</div>
-          <div className="text-[#FE5001] italic font-semibold font-[family-name:var(--font-cormorant)]">cultures, people, and perspectives.</div>
+          <div className="text-[#FE5001] font-semibold font-[family-name:var(--font-cormorant)]">cultures, people, and perspectives.</div>
         </div>
-        <div className="text-[#333333] mb-4 text-[16px] md:text-[34px] leading-[1.5]">
-          Here are some of the places and journeys that continue
-        </div>
-        <div className="text-[#FE5001] font-semibold italic font-[family-name:var(--font-cormorant)]">
+        <div className="text-[#333333] mb-4 leading-[1.1]">
+          <div className='text-[16px] md:text-[34px]'>Here are some of the places and journeys that continue</div>
+          <div className="text-[#FE5001] font-semibold font-[family-name:var(--font-cormorant)]">
           to inspire my work and worldview.
         </div>
+        </div>
+        
       </div>
 
       {/* Pill Indicator — immediately below the text */}

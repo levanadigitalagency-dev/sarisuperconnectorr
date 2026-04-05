@@ -61,7 +61,7 @@ export default function Connect() {
             {/* Static Quote Container */}
             <div className="w-full">
               <div className="min-h-[180px] md:min-h-[200px] flex items-start">
-                <p className="font-[family-name:var(--font-cormorant)] text-[22px] md:text-[40px] font-bold italic text-[#FE5001] leading-[1.6]">
+                <p className="font-[family-name:var(--font-cormorant)] text-[22px] md:text-[40px] font-bold italic text-[#FE5001] leading-[1] md:leading-[1.05]">
                   &ldquo;{quotesData[0].text}&rdquo;
                 </p>
               </div>

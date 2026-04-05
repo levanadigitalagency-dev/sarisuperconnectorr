@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -40,20 +41,19 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-2.5">
               {[
-                'The idea - The Superconnector principle',
-                'Philosophy',
-                'What I do',
-                'Global Network',
-                'Quotes'
+                { label: 'The idea - The Superconnector principle', href: '/the-idea' },
+                { label: 'What I do', href: '/about' },
+                { label: 'Global Network', href: '/global-network' },
+                { label: 'Quotes', href: '/quotes' }
               ].map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="group flex items-center text-[#F5F5F5] hover:text-[#FE5001] font-[family-name:var(--font-poppins)] text-base transition-colors duration-300">
+                  <Link href={item.href} className="group flex items-center text-[#F5F5F5] hover:text-[#FE5001] font-[family-name:var(--font-poppins)] text-base transition-colors duration-300">
                     {/* Arrow dengan animasi group-hover */}
                     <span className="opacity-0 -translate-x-2 w-0 group-hover:w-5 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-[#fe5001]">
                       &rarr;
                     </span>
-                    <span>{item}</span>
-                  </a>
+                    <span>{item.label}</span>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -63,20 +63,20 @@ export default function Footer() {
           <div className="md:col-span-3 flex flex-col ">
             <ul className="flex flex-col gap-2.5">
               {[
-                'The Superconnector Method',
-                'Speaking & Advisory',
-                'On The Road',
-                'Blog',
-                'Connect'
+                { label: 'The Superconnector Method', href: '/the-superconnector-method' },
+                { label: 'Speaking & Advisory', href: '/speaking-advisory' },
+                { label: 'On The Road', href: '/about' },
+                { label: 'Articles', href: '/blogs' },
+                { label: 'Connect', href: '/' }
               ].map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="group flex items-center text-[#F5F5F5] hover:text-[#FE5001] font-[family-name:var(--font-poppins)] text-base transition-colors duration-300">
+                  <Link href={item.href} className="group flex items-center text-[#F5F5F5] hover:text-[#FE5001] font-[family-name:var(--font-poppins)] text-base transition-colors duration-300">
                     {/* Arrow dengan animasi group-hover */}
                     <span className="opacity-0 -translate-x-2 w-0 group-hover:w-5 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-[#FE5001]">
                       &rarr;
                     </span>
-                    <span>{item}</span>
-                  </a>
+                    <span>{item.label}</span>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -92,7 +92,7 @@ export default function Footer() {
 
           <div className="flex gap-4">
             {/* Instagram Icon */}
-            <a href="#" className="text-[#F5F5F5] hover:text-[#E8AA73] transition-colors" aria-label="Instagram">
+            <a href="https://www.instagram.com/sarisuperconnector" target="_blank" rel="noopener noreferrer" className="text-[#F5F5F5] hover:text-[#E8AA73] transition-colors" aria-label="Instagram">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -100,7 +100,7 @@ export default function Footer() {
               </svg>
             </a>
             {/* LinkedIn Icon */}
-            <a href="#" className="text-[#F5F5F5] hover:text-[#E8AA73] transition-colors" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/sarikusumaningrum" target="_blank" rel="noopener noreferrer" className="text-[#F5F5F5] hover:text-[#E8AA73] transition-colors" aria-label="LinkedIn">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                 <rect x="2" y="9" width="4" height="12"></rect>

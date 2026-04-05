@@ -86,13 +86,13 @@ const TheSuperconnectorMethodSection = ({
   title = (
     <>
       <span style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 600 }} className="text-4xl md:text-6xl text-[#333333]">The </span>
-      <span className="text-[44px] md:text-[80px] text-[#FE5001] italic" style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }}>Superconnector</span><br />
+      <span className="text-[44px] md:text-[80px] text-[#FE5001]" style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }}>Superconnector</span><br />
       <span style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 600 }} className="text-4xl md:text-6xl text-[#333333]">Method™</span>
     </>
   ),
   description = (
     <>
-      Sari Kusumaningrum speaks and advises on the intersection of <span className="text-[20px] md:text-[40px] text-[#FE5001] italic" style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }}>leadership, reputation,</span> and <span className="text-[20px] md:text-[40px] text-[#FE5001] italic" style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }}>global connectivity.</span>
+      Sari Kusumaningrum speaks and advises on the intersection of <span className="text-[20px] md:text-[40px] text-[#FE5001]" style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }}>leadership, reputation,</span> and <span className="text-[20px] md:text-[40px] text-[#FE5001]" style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }}>global connectivity.</span>
     </>
   ),
   imageSrc = "/white-shirt-woman.png",
@@ -211,31 +211,31 @@ const TheSuperconnectorMethodSection = ({
 
             {/* Offline Column */}
             <div>
-              <h3 className="text-[#333333] text-[28px] md:text-[36px] font-bold mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
+              <h3 className="text-[#FE5001] text-[28px] md:text-[36px] font-bold mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 Offline
               </h3>
-              <div className="space-y-8 md:space-y-12">
+              <div className="space-y-6 md:space-y-8">
                 <div>
-                  <div className="w-full h-[300px] md:h-[600px] relative rounded-[12px] overflow-hidden mb-3 md:mb-4">
-                    <Image src="/images/program-1.jpg" alt="Offline Program 1" fill className="object-cover object-left" />
+                  <div className="w-full h-[250px] md:h-[400px] relative rounded-[12px] overflow-hidden mb-3 md:mb-4">
+                    <Image src="/images/program-1.jpg" alt="Sumatera Flood Emergency Relief Fund" fill className="object-cover" />
                   </div>
-                  <h4 className="text-[#333333] text-[18px] md:text-[22px] font-semibold leading-snug max-w-[90%]" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                    Sumatera Flood Emergency Relief fund
+                  <h4 className="text-[#333333] text-[18px] md:text-[22px] font-semibold leading-snug" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                    Sumatera Flood Emergency Relief Fund
                   </h4>
                 </div>
                 <div>
-                  <div className="w-full h-[300px] md:h-[600px] relative rounded-[12px] overflow-hidden mb-3 md:mb-4">
-                    <Image src="/images/program-3.png" alt="Offline Program 2" fill className="object-cover" />
+                  <div className="w-full h-[250px] md:h-[400px] relative rounded-[12px] overflow-hidden mb-3 md:mb-4">
+                    <Image src="/images/program-3.png" alt="National Day of the Republic of Cyprus" fill className="object-cover" />
                   </div>
-                  <h4 className="text-[#333333] text-[18px] md:text-[22px] font-semibold leading-snug max-w-[90%]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                  <h4 className="text-[#333333] text-[18px] md:text-[22px] font-semibold leading-snug" style={{ fontFamily: "'Poppins', sans-serif" }}>
                     National Day of the Republic of Cyprus
                   </h4>
                 </div>
                 <div>
-                  <div className="w-full h-[300px] md:h-[600px] relative rounded-[12px] overflow-hidden mb-3 md:mb-4">
-                    <Image src="/images/program-5.png" alt="Offline Program 3" fill className="object-cover" />
+                  <div className="w-full h-[250px] md:h-[400px] relative rounded-[12px] overflow-hidden mb-3 md:mb-4">
+                    <Image src="/images/program-5.png" alt="KADIN Iftar Gathering" fill className="object-cover" />
                   </div>
-                  <h4 className="text-[#333333] text-[18px] md:text-[22px] font-semibold leading-snug max-w-[90%]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                  <h4 className="text-[#333333] text-[18px] md:text-[22px] font-semibold leading-snug" style={{ fontFamily: "'Poppins', sans-serif" }}>
                     KADIN Iftar Gathering
                   </h4>
                 </div>
@@ -244,31 +244,31 @@ const TheSuperconnectorMethodSection = ({
 
             {/* Online Column */}
             <div>
-              <h3 className="text-[#333333] text-[28px] md:text-[36px] font-bold mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
+              <h3 className="text-[#FE5001] text-[28px] md:text-[36px] font-bold mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 Online
               </h3>
-              <div className="space-y-8 md:space-y-12">
+              <div className="space-y-6 md:space-y-8">
                 <div>
-                  <div className="w-full h-[300px] md:h-[600px] relative rounded-[12px] overflow-hidden mb-3 md:mb-4">
-                    <Image src="/images/program-2.png" alt="Offline Program 2" fill className="object-cover object-[0%_44%] scale-125" />
+                  <div className="w-full h-[250px] md:h-[400px] relative rounded-[12px] overflow-hidden mb-3 md:mb-4">
+                    <Image src="/images/program-2.png" alt="Online Business Meeting with the Indonesian Ambassador to Peru" fill className="object-cover" />
                   </div>
-                  <h4 className="text-[#333333] text-[18px] md:text-[22px] font-semibold leading-snug max-w-[90%]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                  <h4 className="text-[#333333] text-[18px] md:text-[22px] font-semibold leading-snug" style={{ fontFamily: "'Poppins', sans-serif" }}>
                     Online Business Meeting with the Indonesian Ambassador to Peru
                   </h4>
                 </div>
                 <div>
-                  <div className="w-full h-[300px] md:h-[600px] relative rounded-[12px] overflow-hidden mb-3 md:mb-4">
-                    <Image src="/images/program-4.png" alt="Offline Program 3" fill className="object-cover" />
+                  <div className="w-full h-[250px] md:h-[400px] relative rounded-[12px] overflow-hidden mb-3 md:mb-4">
+                    <Image src="/images/program-4.png" alt="Cyber Security Hybrid Workshop" fill className="object-cover" />
                   </div>
-                  <h4 className="text-[#333333] text-[18px] md:text-[22px] font-semibold leading-snug max-w-[90%]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                  <h4 className="text-[#333333] text-[18px] md:text-[22px] font-semibold leading-snug" style={{ fontFamily: "'Poppins', sans-serif" }}>
                     Cyber Security Hybrid Workshop
                   </h4>
                 </div>
                 <div>
-                  <div className="w-full h-[300px] md:h-[600px] relative rounded-[12px] overflow-hidden mb-3 md:mb-4">
-                    <Image src="/images/program-6.png" alt="Offline Program 3" fill className="object-cover" />
+                  <div className="w-full h-[250px] md:h-[400px] relative rounded-[12px] overflow-hidden mb-3 md:mb-4">
+                    <Image src="/images/program-6.png" alt="State Visit of President of Brazil" fill className="object-cover" />
                   </div>
-                  <h4 className="text-[#333333] text-[18px] md:text-[22px] font-semibold leading-snug max-w-[90%]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                  <h4 className="text-[#333333] text-[18px] md:text-[22px] font-semibold leading-snug" style={{ fontFamily: "'Poppins', sans-serif" }}>
                     State Visit of President of Brazil
                   </h4>
                 </div>
