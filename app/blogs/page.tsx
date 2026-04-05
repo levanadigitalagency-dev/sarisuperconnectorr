@@ -24,7 +24,7 @@ export default function ArticlesPage() {
           All Articles
         </h1>
         <p className="font-[family-name:var(--font-poppins)] text-[20px] md:text-[24px] lg:text-[28px] leading-[1.4] text-[#1A1A1A] mb-12 max-w-[1000px]">
-          Insights and reflections on <span className="italic text-[#E65100] font-[family-name:var(--font-cormorant)]">leadership, reputation,</span> and <span className="italic text-[#E65100] font-[family-name:var(--font-cormorant)]">the power</span> of <span className="italic text-[#E65100] font-[family-name:var(--font-cormorant)]">strategic relationship</span> in a connected world.
+          Insights and reflections on <span className="font-bold text-[#FE5001] md:text-[28px] font-[family-name:var(--font-cormorant)]">leadership, reputation,</span> and <span className="font-bold text-[#FE5001] md:text-[28px] font-[family-name:var(--font-cormorant)]">the power</span> of <span className="font-bold text-[#FE5001] md:text-[28px] font-[family-name:var(--font-cormorant)]">strategic relationship</span> in a connected world.
         </p>
 
         {/* Cards Grid */}

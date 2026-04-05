@@ -33,12 +33,12 @@ const AboutSection: React.FC<AboutSectionProps> = ({
             <br />don&rsquo;t define
             <br />real influence of power.
             <br /><br />
-            True <span style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }} className="text-[36px] text-[#FE5001] italic font-bold">leadership</span> is built on{" "}
-            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[36px] text-[#FE5001] italic font-bold">trust,
+            True <span style={{ fontFamily: "'Cormorant', serif", fontWeight: 700 }} className="text-[36px] text-[#FE5001] font-bold">leadership</span> is built on{" "}
+            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[36px] text-[#FE5001] font-bold">trust,
               <br />positioning,</span> and{" "} <br />
-            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[36px] text-[#FE5001] italic font-bold">meaningful relationships</span>
+            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[36px] text-[#FE5001] font-bold">meaningful relationships</span>
             <br />that create{" "}
-            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[36px] text-[#FE5001] italic font-bold">lasting impact.</span>
+            <span style={{ fontFamily: "'Cormorant', serif" }} className="text-[36px] text-[#FE5001] font-bold">lasting impact.</span>
           </p>
         </div>
 
