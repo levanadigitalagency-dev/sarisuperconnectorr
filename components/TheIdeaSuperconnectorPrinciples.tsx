@@ -53,7 +53,7 @@ const renderDescriptionWithHighlights = (text: string, highlights?: string[]) =>
     return text;
   }
 
-  const parts: (string | JSX.Element)[] = [];
+  const parts: React.ReactNode[] = [];
   let lastIndex = 0;
 
   // Create a regex pattern that matches any of the highlights (case-insensitive)
